@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions | VigilParent</title>
+    <meta name="description" content="Terms and Conditions of Service for VigilParent and VigilParent Kid parental control applications developed by Vigil Studio.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --primary-light: #eff6ff;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --text-light: #64748b;
+            --bg-body: #f8fafc;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+            --border-hover: #cbd5e1;
+            --danger-bg: #fef2f2;
+            --danger-border: #fecaca;
+            --danger-text: #991b1b;
+            --warning-bg: #fffbeb;
+            --warning-border: #fef3c7;
+            --warning-text: #92400e;
+            --success-bg: #f0fdf4;
+            --success-border: #bbf7d0;
+            --success-text: #166534;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            --radius-md: 10px;
+            --radius-lg: 16px;
+        }
+
+        html, body {
+            width: 100%;
+            max-width: 100%;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            word-break: break-word;
+            overflow-wrap: break-word;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.15s ease;
+        }
+
+        a:hover {
+            color: var(--primary-dark);
+            text-decoration: underline;
+        }
+
+        /* Top Navigation Bar */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--border);
+            padding: 0.875rem 1.5rem;
+        }
+
+        .navbar-inner {
+            max-width: 1240px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand-group {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .brand-logo {
+            width: 38px;
+            height: 38px;
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
+        }
+
+        .brand-logo svg {
+            width: 22px;
+            height: 22px;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .brand-name {
+            font-size: 1.25rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: #0f172a;
+        }
+
+        .brand-name span {
+            color: var(--primary);
+        }
+
+        .brand-badge {
+            font-size: 0.75rem;
+            font-weight: 600;
+            background: #e2e8f0;
+            color: #334155;
+            padding: 0.15rem 0.5rem;
+            border-radius: 9999px;
+            margin-left: 0.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+        }
+
+        .nav-link {
+            font-size: 0.925rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            transition: all 0.15s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--primary);
+            text-decoration: none;
+            background: var(--primary-light);
+        }
+
+        .nav-link.active {
+            color: var(--primary);
+            background: var(--primary-light);
+        }
+
+        .nav-cta {
+            background: var(--primary);
+            color: #fff !important;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.875rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .nav-cta:hover {
+            background: var(--primary-dark);
+            text-decoration: none;
+        }
+
+        /* Hero / Header Section */
+        .page-header {
+            background: #ffffff;
+            border-bottom: 1px solid var(--border);
+            padding: 3rem 1.5rem 2.5rem;
+        }
+
+        .header-content {
+            max-width: 1240px;
+            margin: 0 auto;
+        }
+
+        .doc-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--primary);
+            background: var(--primary-light);
+            padding: 0.35rem 0.75rem;
+            border-radius: 9999px;
+            margin-bottom: 1rem;
+        }
+
+        .page-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            letter-spacing: -0.03em;
+            color: #0f172a;
+            margin-bottom: 0.75rem;
+        }
+
+        .meta-strip {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .meta-item strong {
+            color: var(--text-main);
+        }
+
+        /* Main Container Layout */
+        .layout-container {
+            max-width: 1240px;
+            margin: 2.5rem auto 5rem;
+            padding: 0 1.5rem;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        /* Sidebar Table of Contents */
+        .sidebar {
+            position: sticky;
+            top: 5.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 1.25rem;
+            box-shadow: var(--shadow-sm);
+            max-height: calc(100vh - 7rem);
+            overflow-y: auto;
+        }
+
+        .sidebar-title {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--text-light);
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .toc-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .toc-item a {
+            display: block;
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            padding: 0.4rem 0.6rem;
+            border-radius: 6px;
+            text-decoration: none;
+            line-height: 1.4;
+            transition: all 0.15s ease;
+        }
+
+        .toc-item a:hover {
+            color: var(--primary);
+            background: var(--primary-light);
+        }
+
+        /* Main Content Styling */
+        .content-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 3rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .prose-section {
+            margin-bottom: 2.75rem;
+            padding-bottom: 2.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .prose-section:last-of-type {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1.25rem;
+            scroll-margin-top: 6rem;
+        }
+
+        .section-num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background: var(--primary-light);
+            color: var(--primary);
+            font-size: 0.85rem;
+            font-weight: 800;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+
+        .section-header h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-main);
+            letter-spacing: -0.02em;
+        }
+
+        .prose p {
+            margin-bottom: 1.2rem;
+            color: #334155;
+            font-size: 1rem;
+        }
+
+        .prose p:last-child {
+            margin-bottom: 0;
+        }
+
+        .prose ul, .prose ol {
+            margin: 1rem 0 1.25rem 1.5rem;
+            color: #334155;
+        }
+
+        .prose li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Callout Boxes */
+        .callout {
+            border-radius: var(--radius-md);
+            padding: 1.25rem 1.5rem;
+            margin: 1.5rem 0;
+            border-left: 4px solid;
+            font-size: 0.95rem;
+        }
+
+        .callout-danger {
+            background-color: var(--danger-bg);
+            border-color: #ef4444;
+            color: var(--danger-text);
+        }
+
+        .callout-danger strong {
+            color: #7f1d1d;
+        }
+
+        .callout-warning {
+            background-color: var(--warning-bg);
+            border-color: #f59e0b;
+            color: var(--warning-text);
+        }
+
+        .callout-info {
+            background-color: var(--primary-light);
+            border-color: var(--primary);
+            color: #1e3a8a;
+        }
+
+        .callout-title {
+            font-weight: 700;
+            font-size: 1rem;
+            margin-bottom: 0.4rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Legal Caps Styling */
+        .legal-caps {
+            background: #f1f5f9;
+            padding: 1.25rem;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            line-height: 1.6;
+            color: #1e293b;
+            margin: 1rem 0;
+        }
+
+        /* Contact Details Card */
+        .contact-box {
+            background: #f8fafc;
+            border: 1px solid #cbd5e1;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.25rem;
+            margin-top: 1rem;
+        }
+
+        .contact-item {
+            font-size: 0.9rem;
+        }
+
+        .contact-item .label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: var(--text-light);
+            letter-spacing: 0.05em;
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-item .value {
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        /* Footer */
+        .site-footer {
+            background: #ffffff;
+            border-top: 1px solid var(--border);
+            padding: 3rem 1.5rem;
+            margin-top: auto;
+        }
+
+        .footer-inner {
+            max-width: 1240px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1.5rem;
+            font-size: 0.875rem;
+            color: var(--text-light);
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .layout-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .sidebar {
+                display: none;
+            }
+
+            .content-card {
+                padding: 2rem 1.5rem;
+            }
+
+            .page-title {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            html, body {
+                overflow-x: hidden;
+            }
+            .navbar {
+                padding: 0.65rem 0.875rem;
+            }
+            .navbar-inner {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0.65rem;
+            }
+            .brand-group {
+                justify-content: space-between;
+                width: 100%;
+            }
+            .nav-links {
+                display: flex;
+                width: 100%;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                gap: 0.45rem;
+                padding-bottom: 0.25rem;
+                scrollbar-width: none;
+            }
+            .nav-links::-webkit-scrollbar {
+                display: none;
+            }
+            .nav-link, .nav-cta {
+                white-space: nowrap;
+                flex-shrink: 0;
+                font-size: 0.825rem;
+                padding: 0.35rem 0.65rem;
+            }
+            .page-header {
+                padding: 1.75rem 1rem 1.5rem;
+            }
+            .page-title {
+                font-size: 1.65rem;
+                line-height: 1.25;
+            }
+            .meta-strip {
+                gap: 0.65rem 1.25rem;
+                font-size: 0.825rem;
+                margin-top: 0.75rem;
+                padding-top: 0.75rem;
+            }
+            .layout-container {
+                padding: 0 0.75rem;
+                margin: 1.25rem auto 3rem;
+            }
+            .content-card {
+                padding: 1.5rem 1rem;
+                border-radius: 14px;
+            }
+            .prose-section {
+                margin-bottom: 2rem;
+                padding-bottom: 1.75rem;
+            }
+            .section-header {
+                gap: 0.5rem;
+            }
+            .section-header h2 {
+                font-size: 1.25rem;
+            }
+            .section-num {
+                width: 28px;
+                height: 28px;
+                font-size: 0.75rem;
+                border-radius: 6px;
+            }
+            .callout {
+                padding: 1rem 1.15rem;
+                font-size: 0.9rem;
+            }
+            .legal-caps {
+                padding: 1rem;
+                font-size: 0.8rem;
+            }
+            .contact-box {
+                padding: 1.25rem 1rem;
+            }
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 0.75rem;
+            }
+            .site-footer {
+                padding: 2rem 1rem;
+            }
+            .footer-inner {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 1rem;
+            }
+            .footer-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 0.75rem 1.25rem;
+            }
+        }
+
+        @media print {
+            .navbar, .sidebar, .site-footer {
+                display: none;
+            }
+            .layout-container {
+                display: block;
+                max-width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            .content-card {
+                border: none;
+                box-shadow: none;
+                padding: 0;
+            }
+            body {
+                background: #ffffff;
+                color: #000000;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <div class="brand-group">
+                <div class="brand-logo">
+                    <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div class="brand-name">Vigil<span>Parent</span></div>
+                <span class="brand-badge">Legal</span>
+            </div>
+
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Download App</a>
+                <a href="beta.html" class="nav-link">Beta Program</a>
+                <a href="terms.html" class="nav-link active">Terms & Conditions</a>
+                <a href="privacy.html" class="nav-link">Privacy Policy</a>
+                <a href="mailto:info.vigilstudio@gmail.com" class="nav-cta">Contact Support</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="header-content">
+            <div class="doc-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                Official Legal Agreement
+            </div>
+            <h1 class="page-title">VigilParent Terms and Conditions</h1>
+            <p style="color: var(--text-muted); font-size: 1.125rem; max-width: 800px;">
+                Governing terms for the VigilParent Controller application and VigilParent Kid companion software. Please review these terms carefully prior to pairing devices.
+            </p>
+
+            <div class="meta-strip">
+                <div class="meta-item">
+                    <span>Developer:</span>
+                    <strong>Vigil Studio</strong>
+                </div>
+                <div class="meta-item">
+                    <span>Last Updated:</span>
+                    <strong>November 10, 2026</strong>
+                </div>
+                <div class="meta-item">
+                    <span>Contact:</span>
+                    <strong>info.vigilstudio@gmail.com</strong>
+                </div>
+                <div class="meta-item">
+                    <span>Liability:</span>
+                    <strong>Zero Developer Liability</strong>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Layout -->
+    <div class="layout-container">
+        
+        <!-- Table of Contents Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-title">Table of Contents</div>
+            <ul class="toc-list">
+                <li class="toc-item"><a href="#section-1">1. Acceptance of Terms</a></li>
+                <li class="toc-item"><a href="#section-2">2. Key Definitions</a></li>
+                <li class="toc-item"><a href="#section-3">3. Eligibility & Authority</a></li>
+                <li class="toc-item"><a href="#section-4">4. Anti-Stalkerware Policy</a></li>
+                <li class="toc-item"><a href="#section-5">5. Total Exemption for Any Activity</a></li>
+                <li class="toc-item"><a href="#section-6">6. P2P & Storage Architecture</a></li>
+                <li class="toc-item"><a href="#section-7">7. Emergency Life-Safety Disclaimer</a></li>
+                <li class="toc-item"><a href="#section-8">8. Accounts & Pairing Security</a></li>
+                <li class="toc-item"><a href="#section-9">9. Subscriptions & Billing</a></li>
+                <li class="toc-item"><a href="#section-10">10. License & Restrictions</a></li>
+                <li class="toc-item"><a href="#section-11">11. Third-Party SDKs & Ads</a></li>
+                <li class="toc-item"><a href="#section-12">12. Disclaimer of Warranties</a></li>
+                <li class="toc-item"><a href="#section-13">13. Limitation of Liability</a></li>
+                <li class="toc-item"><a href="#section-14">14. Complete Indemnification</a></li>
+                <li class="toc-item"><a href="#section-15">15. Modifications to Terms</a></li>
+                <li class="toc-item"><a href="#section-16">16. Contact Information</a></li>
+            </ul>
+        </aside>
+
+        <!-- Document Body Card -->
+        <main class="content-card">
+            
+            <!-- Section 1 -->
+            <section class="prose-section">
+                <div class="section-header" id="section-1">
+                    <span class="section-num">01</span>
+                    <h2>Acceptance of Terms</h2>
+                </div>
+                <div class="prose">
+                    <p>
+                        Welcome to <strong>VigilParent</strong>. These Terms and Conditions (“Terms,” “Agreement”) constitute a legally binding contract between you (“User,” “Parent,” or “You”) and <strong>Vigil Studio</strong> (“Company,” “We,” “Us,” or “Our”) governing your download, installation, registration, and use of the VigilParent controller app, the companion VigilParent Kid app, and associated cloud relays (collectively, the “Services”).
+                    </p>
+                    <p>
+                        <strong>PLEASE READ THESE TERMS CAREFULLY.</strong> By downloading, installing, linking a device, or accessing the Services, you confirm that you have read, understood, and agreed to be legally bound by these Terms. If you do not accept these Terms without reservation, you must immediately discontinue use of the Services and uninstall the software from all devices.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Section 2 -->
+            <section class="prose-section">
+                <div class="section-header" id="section-2">
+                    <span class="section-num">02</span>
+                    <h2>Key Definitions</h2>
+                </div>
+                <div class="prose">
+                    <ul>
+                        <li><strong>“Parent Device”</strong>: The personal mobile handset owned and operated by the legal parent or guardian upon which the primary VigilParent management application is installed.</li>
+                        <li><strong>“Child Device”</strong>: The mobile device used by a minor child under your direct legal care upon which the companion VigilParent Kid application is installed.</li>
+                        <li><strong>“P2P Connection”</strong>: A direct, end-to-end encrypted Peer-to-Peer data synchronization protocol established between the Parent Device and Child Device without storing granular activity logs on Company servers.</li>
+                        <li><strong>“Server-Retained Metadata”</strong>: The strictly limited administrative records retained on Company servers for basic account pairing and status displays: Parent Email ID, Child Name/Nickname, Child Device Model, Pairing Date, Device Last Seen timestamp, and Last Known Location (only when Auto-Location is enabled by the parent).</li>
+                        <li><strong>“Activity Logs”</strong>: Detailed device telemetry generated on the Child Device, such as installed applications, screen time counters, visited URLs, and notification summaries.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Section 3 -->
+            <section class="prose-section">
+                <div class="section-header" id="section-3">
+                    <span class="section-num">03</span>
+                    <h2>Eligibility, Legal Authority, and Verifiable Parental Status</h2>
+                </div>
+                <div class="prose">
+                    <p>
+                        The Services are strictly designed, licensed, and provided for legitimate parental oversight of minor children. By creating an account or linking any device, you certify, represent, and warrant under penalty of law that:
+                    </p>
+                    <ol>
+                        <li>You are at least <strong>18 years of age</strong> (or the age of majority in your jurisdiction).</li>
+                        <li>You are the <strong>biological parent, adoptive parent, or court-appointed legal guardian</strong> holding active legal custody of the minor child who utilizes the Child Device.</li>
+                        <li>You are either the sole legal owner of the Child Device or possess explicit, unencumbered authorization from the legal owner to install monitoring software.</li>
+                        <li>The child using the Child Device is a minor under your direct care and supervision.</li>
+                        <li>Your use of the Services complies with all applicable local, provincial, state, national, and international electronic communications, surveillance, and child protection statutes.</li>
+                    </ol>
+                </div>
+            </section>
+
+            <!-- Section 4 -->
+            <section class="prose-section">
+                <div class="section-header" id="section-4">
+                    <span class="section-num">04</span>
+                    <h2>Strict Prohibition of Misuse and Anti-Stalkerware Policy</h2>
+                </div>
+                <div class="prose">
+                    <div class="callout callout-danger">
+                        <div class="callout-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                            CRITICAL NOTICE: VIGILPARENT IS NOT STALKERWARE OR SPYWARE
+                        </div>
+                        <p>
+                            Vigil Studio strictly condemns, prohibits, and denies service to any individual attempting unauthorized surveillance, covert eavesdropping, or domestic tracking.
+                        </p>
+                    </div>
+                    <p>You explicitly agree and guarantee that you will <strong>NEVER</strong>:</p>
+                    <ul>
+                        <li>Install or configure VigilParent Kid on any device owned, possessed, or utilized by an adult (individual aged 18 or above), including a spouse, domestic partner, boyfriend, girlfriend, employee, contractor, roommate, or relative.</li>
+                        <li>Attempt to hide, conceal, suppress, or modify the persistent notification icon or foreground alerts displayed on the Child Device. Google Play Developer policies mandate that the user of the monitored device is visibly alerted that parental controls are operating.</li>
+                        <li>Use the Services for cyberstalking, harassment, extortion, coercive control, domestic abuse, commercial espionage, or wiretapping.</li>
+                        <li>Sell, distribute, rent, or lease access to the Services to any commercial surveillance or investigative enterprise.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Section 5 -->
+            <section class="prose-section">
+                <div class="section-header" id="section-5">
+                    <span class="section-num">05</span>
+                    <h2>Complete Exemption & Absolute Non-Responsibility for Any Activity</h2>
+                </div>
+                <div class="prose">
+                    <div class="callout callout-danger">
+                        <div class="callout-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            TOTAL DEVELOPER EXONERATION: VIGIL STUDIO IS NOT RESPONSIBLE FOR ANY ACTIVITY
+                        </div>
+                        <p>
+                            Vigil Studio develops and publishes software strictly as a passive, neutral technology provider. <strong>Vigil Studio does not monitor, inspect, control, verify, or participate in any activity conducted through or with the application, and expressly disclaims any and all responsibility or liability for any activity whatsoever.</strong>
+                        </p>
+                    </div>
+
+                    <p>
+                        <strong>1. Neutral Technology Provider:</strong> You acknowledge that Vigil Studio merely writes and publishes software code. Vigil Studio does not possess the technical or operational capability, nor the legal duty, to verify who installs the app, on whose device it is installed, whether valid consent was obtained, or what purpose the application is being used for.
+                    </p>
+
+                    <p>
+                        <strong>2. Comprehensive Disclaimer for All Activities:</strong> You expressly understand and agree that <strong>VIGIL STUDIO SHALL BEAR NO RESPONSIBILITY, NO LIABILITY, AND NO OBLIGATION WHATSOEVER FOR ANY OF THE FOLLOWING ACTIVITIES:</strong>
+                    </p>
+                    <ul>
+                        <li><strong>User Monitoring Activities:</strong> Any tracking, monitoring, location fetching, app blocking, screen time calculation, URL filtering, or inspection of communications conducted by the User or any third party.</li>
+                        <li><strong>Unauthorized or Covert Surveillance:</strong> Any installation or execution of the application on any device without lawful authority, court order, or verifiable parental guardianship, including any attempts to monitor spouses, romantic partners, employees, or other adults.</li>
+                        <li><strong>Domestic, Marital & Family Disputes:</strong> Any personal fallout, divorce or separation proceedings, domestic altercations, marital distress, child custody disputes, or interpersonal conflicts resulting from or related to the use, discovery, or logs of the application.</li>
+                        <li><strong>Civil, Criminal & Statutory Violations:</strong> Any violation of federal, national, state, or local privacy laws, electronic communications acts, anti-stalking laws, wiretapping statues, or eavesdropping regulations committed by the User.</li>
+                        <li><strong>Device Tampering & Performance Issues:</strong> Any battery depletion, data consumption, device slowdown, software crash, operating system incompatibility, or uninstallation issues affecting Parent or Child devices.</li>
+                        <li><strong>Loss of Cached or Synced Data:</strong> Any corruption, loss, or inability to access activity logs cached locally on devices or exchanged via direct P2P connections.</li>
+                        <li><strong>Emergency & Life-Safety Failures:</strong> Any physical harm, abduction, injury, accident, or emergency where the application fails to provide real-time location or network alerts.</li>
+                    </ul>
+
+                    <p>
+                        <strong>3. Sole Legal Liability on the User:</strong> The User assumes <strong>sole, absolute, and exclusive legal, moral, civil, and criminal liability</strong> for all actions, configurations, installations, and activities performed through, with, or in connection with the Services. Vigil Studio disclaims any duty of care to you, to monitored minors, or to any third party.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Section 6 -->
+            <section class="prose-section">
+                <div class="section-header" id="section-6">
+                    <span class="section-num">06</span>
+                    <h2>P2P Architecture and Local Storage Disclosures</h2>
+                </div>
+                <div class="prose">
+                    <div class="callout callout-info">
+                        <div class="callout-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                            Privacy-First Architecture: Zero Activity Logs on Cloud Servers
+                        </div>
+                        <p>
+                            Detailed monitoring logs are never uploaded to, retained by, or processed on Vigil Studio cloud servers.
+                        </p>
+                    </div>
+                    <p>You acknowledge and understand the operational structure of the software:</p>
+                    <ul>
+                        <li><strong>Child Device Offline:</strong> When the Child Device has no internet connection, all activity logs (screen time, app launches, browser history) are stored exclusively in the local sandboxed database of the Child Device.</li>
+                        <li><strong>Parent Device Offline:</strong> When the Child Device is online but the Parent Device is unreachable, logs continue to be stored safely on the Child Device. Only the device “Last Seen” timestamp (and Last Known Location if Auto-Location is active) is posted to the server.</li>
+                        <li><strong>Direct P2P Synchronization:</strong> Activity logs sync directly from Child Device to Parent Device over an encrypted P2P session once both devices connect. Once synced, historical activity records reside solely on the Parent Device.</li>
+                        <li><strong>Data Loss Risk:</strong> Because Vigil Studio does not keep cloud backups of your child’s logs, if the Parent Device is lost, damaged, wiped, or uninstalled, previously synced logs cannot be restored by Vigil Studio.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Section 7 -->
+            <section class="prose-section">
+                <div class="section-header" id="section-7">
+                    <span class="section-num">07</span>
+                    <h2>Emergency Services & Life-Safety Disclaimer</h2>
+                </div>
+                <div class="prose">
+                    <div class="callout callout-warning">
+                        <div class="callout-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                            VIGILPARENT IS NOT A REPLACEMENT FOR 911 OR EMERGENCY RESCUE SERVICES
+                        </div>
+                        <p>
+                            VigilParent relies on third-party mobile telecommunications, Wi-Fi networks, and satellite GPS systems. You must never rely upon the App as a life-safety or emergency rescue solution.
+                        </p>
+                    </div>
+                    <p>
+                        Location tracking and status pings can fail or be significantly delayed due to airplane mode, battery depletion, power-down, tunnel coverage gaps, Android battery optimization (Doze mode), or uninstallation. Vigil Studio disclaims all liability for physical harm, loss of life, or injury resulting from network failures.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Section 8 -->
+            <section class="prose-section">
+                <div class="section-header" id="section-8">
+                    <span class="section-num">08</span>
+                    <h2>User Accounts, Passwords, and Pairing Security</h2>
+                </div>
+                <div class="prose">
+                    <p>
+                        To access the Services, you must create an account using a valid email address. You are solely responsible for:
+                    </p>
+                    <ul>
+                        <li>Maintaining the absolute secrecy of your login password.</li>
+                        <li>Securing your Parent Device with biometric authentication, PIN, or pattern lock to protect synced child monitoring logs.</li>
+                        <li>Safeguarding one-time pairing codes and QR codes generated during initial setup.</li>
+                        <li>Promptly reporting any suspected unauthorized account access to <strong>info.vigilstudio@gmail.com</strong>.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Section 9 -->
+            <section class="prose-section">
+                <div class="section-header" id="section-9">
+                    <span class="section-num">09</span>
+                    <h2>Subscriptions, In-App Billing, and Cancellations</h2>
+                </div>
+                <div class="prose">
+                    <p>
+                        Certain premium capabilities of VigilParent require a paid subscription.
+                    </p>
+                    <ul>
+                        <li><strong>Billing via Google Play:</strong> All subscriptions and payments are handled securely by Google Play Store In-App Billing. Vigil Studio never accesses or stores your credit card details.</li>
+                        <li><strong>Auto-Renewal:</strong> Subscriptions renew automatically unless cancelled via your Google Play Account settings at least 24 hours prior to the conclusion of the billing cycle.</li>
+                        <li><strong>Refunds:</strong> Refund requests are governed strictly by Google Play refund policies.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Section 10 -->
+            <section class="prose-section">
+                <div class="section-header" id="section-10">
+                    <span class="section-num">10</span>
+                    <h2>Proprietary Rights and Limited License Grant</h2>
+                </div>
+                <div class="prose">
+                    <p>
+                        Subject to your continuous compliance with these Terms, Vigil Studio grants you a revocable, non-exclusive, non-transferable, non-sublicensable limited license to install and use the App solely for personal, non-commercial parental supervision.
+                    </p>
+                    <p>
+                        You agree not to reverse engineer, decompile, decrypt, disassemble, extract source code, modify, or create derivative works of any component of the VigilParent software ecosystem.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Section 11 -->
+            <section class="prose-section">
+                <div class="section-header" id="section-11">
+                    <span class="section-num">11</span>
+                    <h2>Third-Party SDKs and Advertising Notice</h2>
+                </div>
+                <div class="prose">
+                    <p>
+                        The Services integrate third-party software development kits (SDKs), including <strong>Google Firebase</strong>, <strong>Google Analytics</strong>, and certified <strong>Advertising Network Partners</strong>.
+                    </p>
+                    <ul>
+                        <li><strong>Ads on Parent App Only:</strong> Advertisements are displayed solely within the Parent Controller application.</li>
+                        <li><strong>No Targeted Ads in Child App:</strong> In accordance with Google Play Families Policy, the VigilParent Kid companion application contains no behavioral or interest-based advertising directed at minors.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Section 12 -->
+            <section class="prose-section">
+                <div class="section-header" id="section-12">
+                    <span class="section-num">12</span>
+                    <h2>Disclaimer of Warranties</h2>
+                </div>
+                <div class="prose">
+                    <div class="legal-caps">
+                        THE SERVICES AND APPLICATIONS ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS. TO THE MAXIMUM EXTENT PERMITTED BY LAW, VIGIL STUDIO EXPRESSLY DISCLAIMS ALL WARRANTIES OF ANY KIND, WHETHER STATUTORY, EXPRESS, OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, ACCURACY OF GPS COORDINATES, OR NON-INFRINGEMENT. WE DO NOT GUARANTEE THAT THE APP WILL BE FREE FROM BUGS, UNINTERRUPTED, OR COMPATIBLE WITH EVERY ANDROID HARDWARE REVISION.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 13 -->
+            <section class="prose-section">
+                <div class="section-header" id="section-13">
+                    <span class="section-num">13</span>
+                    <h2>Limitation of Liability</h2>
+                </div>
+                <div class="prose">
+                    <div class="legal-caps">
+                        TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL VIGIL STUDIO, ITS DEVELOPERS, AFFILIATES, OR LICENSORS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING LOSS OF DATA, DEVICE CORRUPTION, PRIVACY INVASION CLAIMS, OR REGULATORY FINES ARISING FROM YOUR USE OF THE SERVICES.<br><br>
+                        IN ANY EVENT, THE MAXIMUM AGGREGATE LIABILITY OF VIGIL STUDIO ARISING OUT OF OR RELATING TO THESE TERMS SHALL BE CAPPED STRICTLY AT THE TOTAL FEES PAID BY YOU TO VIGIL STUDIO DURING THE TWELVE (12) MONTHS PRECEDING THE CLAIM, OR FIFTY UNITED STATES DOLLARS ($50.00 USD / EQUIVALENT IN INR), WHICHEVER IS LESS.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 14 -->
+            <section class="prose-section">
+                <div class="section-header" id="section-14">
+                    <span class="section-num">14</span>
+                    <h2>Complete User Indemnification</h2>
+                </div>
+                <div class="prose">
+                    <p>
+                        You agree to fully defend, indemnify, and hold harmless Vigil Studio, its developer team, and representatives from and against any and all claims, demands, lawsuits, fines, regulatory enforcement actions, damages, liabilities, and legal expenses (including reasonable attorney fees) arising from:
+                    </p>
+                    <ol>
+                        <li>Your breach or violation of any provision of these Terms (particularly Section 4 regarding Prohibited Misuse and Section 5 regarding Developer Exemption).</li>
+                        <li>Any activity, monitoring, tracking, or surveillance conducted through or in connection with the Services.</li>
+                        <li>Any violation of wiretapping, eavesdropping, or privacy rights of any third party (including monitored minors, co-parents, spouses, or roommates).</li>
+                        <li>Any installation of VigilParent Kid on hardware without lawful authority.</li>
+                        <li>Any domestic dispute, family litigation, employment conflict, or personal damage resulting from your use of the application.</li>
+                        <li>Any willful misconduct or unlawful conduct perpetrated by you.</li>
+                    </ol>
+                </div>
+            </section>
+
+            <!-- Section 15 -->
+            <section class="prose-section">
+                <div class="section-header" id="section-15">
+                    <span class="section-num">15</span>
+                    <h2>Modifications to Terms</h2>
+                </div>
+                <div class="prose">
+                    <p>
+                        We reserve the right to amend or update these Terms at any time. When material changes are made, we will update the “Last Updated” date at the top of this page and post notifications within the VigilParent application. Continued use of the App following posted changes constitutes full acceptance of the updated Terms.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Section 16 -->
+            <section class="prose-section">
+                <div class="section-header" id="section-16">
+                    <span class="section-num">16</span>
+                    <h2>Contact Information</h2>
+                </div>
+                <div class="prose">
+                    <p>If you have any questions or legal inquiries regarding these Terms and Conditions, please reach out to our team:</p>
+                    
+                    <div class="contact-box">
+                        <div class="contact-grid">
+                            <div class="contact-item">
+                                <div class="label">Developer Organization</div>
+                                <div class="value">Vigil Studio</div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="label">Support & Inquiries</div>
+                                <div class="value"><a href="mailto:info.vigilstudio@gmail.com">info.vigilstudio@gmail.com</a></div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="label">Legal Inquiries</div>
+                                <div class="value"><a href="mailto:info.vigilstudio@gmail.com">info.vigilstudio@gmail.com</a></div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="label">Physical Address</div>
+                                <div class="value">Available upon verified formal email request</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div>
+                &copy; 2026 <strong>Vigil Studio</strong>. All rights reserved. VigilParent and VigilParent Kid are proprietary software.
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Download App</a>
+                <a href="beta.html">Beta Program</a>
+                <a href="terms.html" style="font-weight: 600;">Terms & Conditions</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="mailto:info.vigilstudio@gmail.com">Contact Developer</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
