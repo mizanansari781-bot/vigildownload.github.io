@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download VigilChild | Official Child Companion App</title>
+    <meta name="description" content="Download VigilChild APK - the secure child companion app for VigilParent parental control. Features P2P encrypted sync and local storage.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --primary-light: #eff6ff;
+            --primary-border: #bfdbfe;
+            --beta-accent: #7c3aed;
+            --beta-hover: #6d28d9;
+            --beta-light: #f5f3ff;
+            --bg-color: #f8fafc;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --text-light: #64748b;
+            --card-bg: #ffffff;
+            --border: #e2e8f0;
+            --border-hover: #cbd5e1;
+            --success: #16a34a;
+            --warning-bg: #fffbeb;
+            --warning-border: #fde68a;
+            --warning-text: #92400e;
+            --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            --shadow-lg: 0 10px 25px -5px rgba(37, 99, 235, 0.15), 0 8px 10px -6px rgba(37, 99, 235, 0.1);
+            --radius-md: 12px;
+            --radius-lg: 20px;
+        }
+
+        html, body {
+            width: 100%;
+            max-width: 100%;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            word-break: break-word;
+            overflow-wrap: break-word;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        /* Top Navbar */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+            padding: 0.875rem 1.5rem;
+        }
+
+        .navbar-inner {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand-group {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .brand-logo {
+            width: 38px;
+            height: 38px;
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
+        }
+
+        .brand-logo svg {
+            width: 22px;
+            height: 22px;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .brand-name {
+            font-size: 1.25rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: #0f172a;
+        }
+
+        .brand-name span {
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+        }
+
+        .nav-link {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            padding: 0.4rem 0.75rem;
+            border-radius: 8px;
+            transition: all 0.15s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--primary);
+            background: var(--primary-light);
+        }
+
+        .beta-nav-pill {
+            background: var(--beta-light);
+            color: var(--beta-accent) !important;
+            border: 1px solid #ddd6fe;
+            padding: 0.35rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            transition: all 0.2s ease;
+        }
+
+        .beta-nav-pill:hover {
+            background: var(--beta-accent);
+            color: #ffffff !important;
+            transform: translateY(-1px);
+        }
+
+        .beta-dot {
+            width: 7px;
+            height: 7px;
+            background: #8b5cf6;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .beta-nav-pill:hover .beta-dot {
+            background: #ffffff;
+        }
+
+        /* Container Layout */
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 2.5rem 1.5rem 5rem;
+        }
+
+        /* Hero / Download Card */
+        .hero-card {
+            background: var(--card-bg);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border);
+            padding: 3.5rem 2.5rem 3rem;
+            text-align: center;
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #2563eb, #3b82f6, #60a5fa);
+        }
+
+        .app-badge-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: var(--primary-light);
+            color: var(--primary);
+            border: 1px solid var(--primary-border);
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 0.3rem 0.85rem;
+            border-radius: 9999px;
+            margin-bottom: 1.25rem;
+        }
+
+        .hero-logo-box {
+            width: 88px;
+            height: 88px;
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            border-radius: 24px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 12px 20px -4px rgba(37, 99, 235, 0.3);
+        }
+
+        .hero-logo-box svg {
+            width: 48px;
+            height: 48px;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 2.2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        h1 {
+            font-size: 2.6rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            color: #0f172a;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.15rem;
+            max-width: 620px;
+            margin: 0 auto 2rem;
+        }
+
+        /* Agreement Checkbox Section */
+        .agreement-box {
+            background: #f8fafc;
+            border: 1.5px solid #cbd5e1;
+            border-radius: var(--radius-md);
+            padding: 1.25rem 1.5rem;
+            max-width: 620px;
+            margin: 0 auto 1.75rem;
+            text-align: left;
+            transition: all 0.25s ease;
+        }
+
+        .agreement-box:hover {
+            border-color: #94a3b8;
+        }
+
+        .agreement-box.highlight-required {
+            border-color: #ef4444;
+            background-color: #fef2f2;
+            animation: shake 0.4s ease;
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            20%, 60% { transform: translateX(-6px); }
+            40%, 80% { transform: translateX(6px); }
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.85rem;
+            cursor: pointer;
+            user-select: none;
+            font-size: 0.925rem;
+            color: #334155;
+            line-height: 1.5;
+        }
+
+        .custom-checkbox {
+            position: relative;
+            flex-shrink: 0;
+            margin-top: 0.15rem;
+        }
+
+        .custom-checkbox input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            accent-color: var(--primary);
+        }
+
+        .checkbox-text a {
+            font-weight: 600;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        .checkbox-hint {
+            font-size: 0.775rem;
+            color: var(--text-light);
+            margin-top: 0.35rem;
+            display: block;
+        }
+
+        /* Download Action Buttons */
+        .download-actions {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.85rem;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.65rem;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            padding: 1.15rem 2.75rem;
+            border-radius: 50px;
+            font-size: 1.15rem;
+            font-weight: 700;
+            transition: all 0.25s ease;
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+            border: none;
+            cursor: pointer;
+            width: auto;
+            min-width: 280px;
+        }
+
+        .download-btn svg {
+            width: 22px;
+            height: 22px;
+            stroke-width: 2.4;
+        }
+
+        .download-btn:not(.disabled):hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -3px rgba(37, 99, 235, 0.45);
+            color: white;
+            text-decoration: none;
+        }
+
+        .download-btn.disabled {
+            background-color: #94a3b8;
+            cursor: not-allowed;
+            box-shadow: none;
+            opacity: 0.7;
+        }
+
+        .file-info {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 0.85rem;
+            color: var(--text-light);
+            font-weight: 500;
+        }
+
+        .file-info-badge {
+            background: #e2e8f0;
+            padding: 0.15rem 0.5rem;
+            border-radius: 6px;
+            font-size: 0.775rem;
+            color: #334155;
+            font-weight: 600;
+        }
+
+        /* Beta Callout Banner */
+        .beta-card {
+            background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%);
+            border: 1.5px solid #ddd6fe;
+            border-radius: var(--radius-lg);
+            padding: 2rem 2.25rem;
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .beta-content {
+            text-align: left;
+        }
+
+        .beta-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            background: #7c3aed;
+            color: #ffffff;
+            font-size: 0.75rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 0.2rem 0.6rem;
+            border-radius: 9999px;
+            margin-bottom: 0.5rem;
+        }
+
+        .beta-title {
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: #4c1d95;
+            margin-bottom: 0.35rem;
+        }
+
+        .beta-desc {
+            font-size: 0.95rem;
+            color: #5b21b6;
+            line-height: 1.5;
+            max-width: 520px;
+        }
+
+        .beta-cta-btn {
+            background: #7c3aed;
+            color: #ffffff !important;
+            padding: 0.85rem 1.6rem;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            white-space: nowrap;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 10px rgba(124, 58, 237, 0.25);
+            flex-shrink: 0;
+        }
+
+        .beta-cta-btn:hover {
+            background: #6d28d9;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(124, 58, 237, 0.35);
+            text-decoration: none;
+        }
+
+        /* Installation Instructions */
+        .instructions {
+            background: var(--card-bg);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border);
+            padding: 2.75rem;
+            margin-top: 2.5rem;
+            box-shadow: var(--shadow);
+        }
+
+        .section-header-row {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .section-header-row h2 {
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--text-main);
+            letter-spacing: -0.02em;
+            margin-bottom: 0.35rem;
+        }
+
+        .section-header-row p {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.25rem;
+        }
+
+        .step-card {
+            display: flex;
+            background: #f8fafc;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 1.5rem;
+            align-items: flex-start;
+            gap: 1.25rem;
+            transition: all 0.2s ease;
+        }
+
+        .step-card:hover {
+            border-color: var(--border-hover);
+            background: #ffffff;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .step-number {
+            background: var(--primary);
+            color: #ffffff;
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 1rem;
+            flex-shrink: 0;
+            box-shadow: 0 3px 6px rgba(37, 99, 235, 0.25);
+        }
+
+        .step-content {
+            flex: 1;
+        }
+
+        .step-content h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 0.35rem;
+            color: #0f172a;
+        }
+
+        .step-content p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.55;
+        }
+
+        .step-tip {
+            display: inline-block;
+            background: #eff6ff;
+            color: #1e40af;
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 0.2rem 0.55rem;
+            border-radius: 6px;
+            margin-top: 0.5rem;
+        }
+
+        /* Safety & Architecture Highlights */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.25rem;
+            margin-top: 2.5rem;
+        }
+
+        .feature-box {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 1.5rem;
+            text-align: left;
+        }
+
+        .feature-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 10px;
+            background: var(--primary-light);
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+
+        .feature-icon svg {
+            width: 22px;
+            height: 22px;
+        }
+
+        .feature-box h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 0.35rem;
+            color: #0f172a;
+        }
+
+        .feature-box p {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        /* Developer Contact Box */
+        .contact-box {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 1.75rem 2rem;
+            margin-top: 2.5rem;
+            text-align: left;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .contact-box-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 0.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-box-subtitle {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            margin-bottom: 1.25rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.25rem;
+        }
+
+        .contact-item {
+            font-size: 0.9rem;
+        }
+
+        .contact-item .label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: var(--text-light);
+            letter-spacing: 0.05em;
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-item .value {
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 4.5rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links a {
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        @media (max-width: 768px) {
+            html, body {
+                overflow-x: hidden;
+            }
+            .navbar {
+                padding: 0.65rem 0.875rem;
+            }
+            .navbar-inner {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0.65rem;
+            }
+            .brand-group {
+                justify-content: space-between;
+                width: 100%;
+            }
+            .nav-links {
+                display: flex;
+                width: 100%;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                gap: 0.45rem;
+                padding-bottom: 0.25rem;
+                scrollbar-width: none;
+            }
+            .nav-links::-webkit-scrollbar {
+                display: none;
+            }
+            .nav-link, .beta-nav-pill {
+                white-space: nowrap;
+                flex-shrink: 0;
+                font-size: 0.825rem;
+                padding: 0.35rem 0.65rem;
+            }
+            .container { 
+                padding: 1.25rem 0.875rem 3rem; 
+            }
+            .hero-card { 
+                padding: 2rem 1rem 1.75rem; 
+                border-radius: 16px;
+            }
+            .hero-logo-box {
+                width: 72px;
+                height: 72px;
+                border-radius: 18px;
+                margin-bottom: 1.25rem;
+            }
+            .hero-logo-box svg {
+                width: 38px;
+                height: 38px;
+            }
+            h1 { 
+                font-size: 1.85rem; 
+                line-height: 1.2;
+            }
+            .subtitle { 
+                font-size: 0.95rem; 
+                margin-bottom: 1.25rem;
+            }
+            .agreement-box {
+                padding: 0.875rem;
+            }
+            .checkbox-label {
+                gap: 0.65rem;
+                font-size: 0.85rem;
+            }
+            .download-btn {
+                width: 100%;
+                max-width: 100%;
+                min-width: 0;
+                padding: 1rem 1.25rem;
+                font-size: 1.05rem;
+            }
+            .file-info {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 0.4rem;
+                font-size: 0.8rem;
+            }
+            .beta-card {
+                flex-direction: column;
+                align-items: stretch;
+                padding: 1.25rem;
+                border-radius: 16px;
+                text-align: left;
+                gap: 1rem;
+            }
+            .beta-title {
+                font-size: 1.2rem;
+            }
+            .beta-desc {
+                font-size: 0.875rem;
+            }
+            .beta-cta-btn {
+                width: 100%;
+                justify-content: center;
+                padding: 0.8rem 1.25rem;
+            }
+            .instructions { 
+                padding: 1.5rem 1rem; 
+                border-radius: 16px;
+                margin-top: 2rem;
+            }
+            .section-header-row {
+                margin-bottom: 1.5rem;
+            }
+            .section-header-row h2 {
+                font-size: 1.4rem;
+            }
+            .section-header-row p {
+                font-size: 0.875rem;
+            }
+            .step-card {
+                padding: 1rem 0.875rem;
+                gap: 0.75rem;
+            }
+            .step-number {
+                width: 30px;
+                height: 30px;
+                font-size: 0.875rem;
+                border-radius: 8px;
+            }
+            .step-content h3 {
+                font-size: 1.05rem;
+            }
+            .step-content p {
+                font-size: 0.875rem;
+            }
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+                margin-top: 1.75rem;
+            }
+            .contact-box {
+                padding: 1.25rem 1rem;
+                margin-top: 2rem;
+            }
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 0.75rem;
+            }
+            footer {
+                margin-top: 3rem;
+                font-size: 0.825rem;
+            }
+            .footer-links {
+                gap: 0.75rem 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <div class="brand-group">
+                <div class="brand-logo">
+                    <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div class="brand-name">Vigil<span>Parent</span></div>
+            </div>
+
+            <div class="nav-links">
+                <a href="index.html" class="nav-link" style="color: var(--primary);">Child App</a>
+                <a href="beta.html" class="beta-nav-pill">
+                    <span class="beta-dot"></span> Beta Program
+                </a>
+                <a href="terms.html" class="nav-link">Terms</a>
+                <a href="privacy.html" class="nav-link">Privacy</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+        <!-- Hero Section & Download Area -->
+        <header class="hero-card">
+            <div class="app-badge-pill">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                Stable Release
+            </div>
+
+            <div class="hero-logo-box">
+                <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+
+            <h1>VigilChild</h1>
+            <p class="subtitle">Secure, privacy-first companion software for parental oversight and minor safety.</p>
+
+            <!-- Mandatory Agreement Checkbox -->
+            <div class="agreement-box" id="agreementBox">
+                <label class="checkbox-label" for="termsCheckbox">
+                    <div class="custom-checkbox">
+                        <input type="checkbox" id="termsCheckbox" onchange="handleCheckboxChange()">
+                    </div>
+                    <div class="checkbox-text">
+                        I certify that I am the <strong>legal parent or guardian</strong> with legal authority over this device, and I have read and agree to the <a href="terms.html" target="_blank">Terms and Conditions</a> and <a href="privacy.html" target="_blank">Privacy Policy</a>.
+                        <span class="checkbox-hint">You must accept the terms before downloading the application file.</span>
+                    </div>
+                </label>
+            </div>
+
+            <!-- Download Button -->
+            <div class="download-actions">
+                <a id="downloadBtn" 
+                   href="https://github.com/mizanansari781-bot/vigildownload.github.io/releases/download/VigilChildDownload/VigilChild.2.7.apk" 
+                   class="download-btn disabled" 
+                   onclick="handleDownloadClick(event)">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    <span>Download APK</span>
+                </a>
+
+                <div class="file-info">
+                    <span class="file-info-badge">v2.7 Stable</span>
+                    <span>60.2 MB</span>
+                    <span>•</span>
+                    <span>Requires Android 6.0+</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- VigilChild Beta Teaser Card -->
+        <aside class="beta-card">
+            <div class="beta-content">
+                <div class="beta-badge">🔥 Early Access</div>
+                <div class="beta-title">Want Experimental Audio & Call Tools?</div>
+                <p class="beta-desc">
+                    Try <strong>VigilChild Beta</strong> to test cutting-edge capabilities like <strong>Call Recording</strong> and <strong>Live Audio Listening While Calling</strong>.
+                </p>
+            </div>
+            <a href="beta.html" class="beta-cta-btn">
+                <span>Explore Beta App</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+        </aside>
+
+        <!-- Step-by-Step Installation Instructions -->
+        <main>
+            <section class="instructions">
+                <div class="section-header-row">
+                    <h2>How to Install on Your Child's Device</h2>
+                    <p>Follow these 4 simple steps to complete setup and pair with your parent phone.</p>
+                </div>
+
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Download the APK File</h3>
+                            <p>Check the consent box above, tap the <strong>Download APK</strong> button, and save the file to this Android device.</p>
+                        </div>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Disable Google Play Protect (Temporary)</h3>
+                            <p>Open <strong>Google Play Store</strong> &gt; tap your <strong>Profile Icon</strong> &gt; <strong>Play Protect</strong> &gt; <strong>Settings (Gear Icon)</strong>. Temporarily turn off <em>"Scan apps with Play Protect"</em>. This prevents false alerts during installation of specialized parental supervision tools.</p>
+                            <span class="step-tip">💡 You can turn it back on after pairing is complete</span>
+                        </div>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Allow Unknown Source Installation</h3>
+                            <p>Open your file manager or browser downloads and tap the <strong>VigilChild.2.7.apk</strong> file. If prompted with a security dialog, tap <strong>Settings</strong> and switch on <em>"Allow from this source"</em>.</p>
+                        </div>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Install, Grant Permissions & Pair</h3>
+                            <p>Complete the package installation and open <strong>VigilChild</strong>. Follow the on-screen prompts to grant Accessibility and Location permissions, then scan the pairing QR code displayed in your <strong>VigilParent</strong> controller app.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Safety & Architecture Highlights -->
+            <div class="features-grid">
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    </div>
+                    <h4>P2P Encrypted Sync</h4>
+                    <p>Activity logs transfer directly between family devices over encrypted P2P. No activity logs are stored on cloud servers.</p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h4>Zero Server Storage</h4>
+                    <p>Screen time, browser history, and application logs are never uploaded to company cloud databases.</p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <h4>Offline-First Caching</h4>
+                    <p>When internet is unavailable, logs remain encrypted locally on the child device and sync automatically when reconnected.</p>
+                </div>
+            </div>
+
+            <!-- Developer Contact Information -->
+            <div class="contact-box">
+                <div class="contact-box-title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    Developer Contact Information
+                </div>
+                <div class="contact-box-subtitle">Official developer information and support channels for VigilParent & VigilChild.</div>
+
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <div class="label">Developer Organization</div>
+                        <div class="value">Vigil Studio</div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="label">Support & Inquiries</div>
+                        <div class="value"><a href="mailto:info.vigilstudio@gmail.com">info.vigilstudio@gmail.com</a></div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="label">Legal & Privacy Contact</div>
+                        <div class="value"><a href="mailto:info.vigilstudio@gmail.com">info.vigilstudio@gmail.com</a></div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="label">Physical Address</div>
+                        <div class="value">Available upon verified formal email request</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-links">
+                <a href="index.html">Child Download (Stable)</a>
+                <a href="beta.html">Beta Program</a>
+                <a href="terms.html">Terms & Conditions</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="mailto:info.vigilstudio@gmail.com">Developer Contact</a>
+            </div>
+            <p>&copy; 2026 <strong>Vigil Studio</strong>. VigilParent and VigilChild are proprietary parental management systems. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+    <!-- Interactive Script for Terms Enforcement -->
+    <script>
+        function handleCheckboxChange() {
+            const checkbox = document.getElementById('termsCheckbox');
+            const downloadBtn = document.getElementById('downloadBtn');
+            const agreementBox = document.getElementById('agreementBox');
+
+            if (checkbox.checked) {
+                downloadBtn.classList.remove('disabled');
+                agreementBox.classList.remove('highlight-required');
+            } else {
+                downloadBtn.classList.add('disabled');
+            }
+        }
+
+        function handleDownloadClick(event) {
+            const checkbox = document.getElementById('termsCheckbox');
+            const agreementBox = document.getElementById('agreementBox');
+
+            if (!checkbox.checked) {
+                event.preventDefault();
+                agreementBox.classList.add('highlight-required');
+                
+                // Shake effect reset
+                setTimeout(() => {
+                    agreementBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }, 100);
+
+                setTimeout(() => {
+                    agreementBox.classList.remove('highlight-required');
+                }, 1200);
+            }
+        }
+    </script>
+
+</body>
+</html>
