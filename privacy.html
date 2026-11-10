@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | VigilParent</title>
+    <meta name="description" content="Privacy Policy for VigilParent and VigilParent Kid. Learn how our privacy-first P2P architecture ensures children's activity logs are never stored on company servers.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --primary-light: #eff6ff;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --text-light: #64748b;
+            --bg-body: #f8fafc;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+            --border-hover: #cbd5e1;
+            --danger-bg: #fef2f2;
+            --danger-border: #fecaca;
+            --danger-text: #991b1b;
+            --warning-bg: #fffbeb;
+            --warning-border: #fef3c7;
+            --warning-text: #92400e;
+            --success-bg: #f0fdf4;
+            --success-border: #bbf7d0;
+            --success-text: #166534;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            --radius-md: 10px;
+            --radius-lg: 16px;
+        }
+
+        html, body {
+            width: 100%;
+            max-width: 100%;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            word-break: break-word;
+            overflow-wrap: break-word;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.15s ease;
+        }
+
+        a:hover {
+            color: var(--primary-dark);
+            text-decoration: underline;
+        }
+
+        /* Top Navigation Bar */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--border);
+            padding: 0.875rem 1.5rem;
+        }
+
+        .navbar-inner {
+            max-width: 1240px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand-group {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .brand-logo {
+            width: 38px;
+            height: 38px;
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
+        }
+
+        .brand-logo svg {
+            width: 22px;
+            height: 22px;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .brand-name {
+            font-size: 1.25rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: #0f172a;
+        }
+
+        .brand-name span {
+            color: var(--primary);
+        }
+
+        .brand-badge {
+            font-size: 0.75rem;
+            font-weight: 600;
+            background: #e2e8f0;
+            color: #334155;
+            padding: 0.15rem 0.5rem;
+            border-radius: 9999px;
+            margin-left: 0.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+        }
+
+        .nav-link {
+            font-size: 0.925rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            transition: all 0.15s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--primary);
+            text-decoration: none;
+            background: var(--primary-light);
+        }
+
+        .nav-link.active {
+            color: var(--primary);
+            background: var(--primary-light);
+        }
+
+        .nav-cta {
+            background: var(--primary);
+            color: #fff !important;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.875rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .nav-cta:hover {
+            background: var(--primary-dark);
+            text-decoration: none;
+        }
+
+        /* Hero / Header Section */
+        .page-header {
+            background: #ffffff;
+            border-bottom: 1px solid var(--border);
+            padding: 3rem 1.5rem 2.5rem;
+        }
+
+        .header-content {
+            max-width: 1240px;
+            margin: 0 auto;
+        }
+
+        .doc-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #166534;
+            background: #dcfce7;
+            padding: 0.35rem 0.75rem;
+            border-radius: 9999px;
+            margin-bottom: 1rem;
+        }
+
+        .page-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            letter-spacing: -0.03em;
+            color: #0f172a;
+            margin-bottom: 0.75rem;
+        }
+
+        .meta-strip {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .meta-item strong {
+            color: var(--text-main);
+        }
+
+        /* Main Container Layout */
+        .layout-container {
+            max-width: 1240px;
+            margin: 2.5rem auto 5rem;
+            padding: 0 1.5rem;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        /* Sidebar Table of Contents */
+        .sidebar {
+            position: sticky;
+            top: 5.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 1.25rem;
+            box-shadow: var(--shadow-sm);
+            max-height: calc(100vh - 7rem);
+            overflow-y: auto;
+        }
+
+        .sidebar-title {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--text-light);
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .toc-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .toc-item a {
+            display: block;
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            padding: 0.4rem 0.6rem;
+            border-radius: 6px;
+            text-decoration: none;
+            line-height: 1.4;
+            transition: all 0.15s ease;
+        }
+
+        .toc-item a:hover {
+            color: var(--primary);
+            background: var(--primary-light);
+        }
+
+        /* Main Content Styling */
+        .content-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 3rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .prose-section {
+            margin-bottom: 2.75rem;
+            padding-bottom: 2.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .prose-section:last-of-type {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1.25rem;
+            scroll-margin-top: 6rem;
+        }
+
+        .section-num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background: var(--primary-light);
+            color: var(--primary);
+            font-size: 0.85rem;
+            font-weight: 800;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+
+        .section-header h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-main);
+            letter-spacing: -0.02em;
+        }
+
+        .prose p {
+            margin-bottom: 1.2rem;
+            color: #334155;
+            font-size: 1rem;
+        }
+
+        .prose p:last-child {
+            margin-bottom: 0;
+        }
+
+        .prose ul, .prose ol {
+            margin: 1rem 0 1.25rem 1.5rem;
+            color: #334155;
+        }
+
+        .prose li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Callout Boxes */
+        .callout {
+            border-radius: var(--radius-md);
+            padding: 1.25rem 1.5rem;
+            margin: 1.5rem 0;
+            border-left: 4px solid;
+            font-size: 0.95rem;
+        }
+
+        .callout-success {
+            background-color: var(--success-bg);
+            border-color: #22c55e;
+            color: var(--success-text);
+        }
+
+        .callout-success strong {
+            color: #14532d;
+        }
+
+        .callout-warning {
+            background-color: var(--warning-bg);
+            border-color: #f59e0b;
+            color: var(--warning-text);
+        }
+
+        .callout-info {
+            background-color: var(--primary-light);
+            border-color: var(--primary);
+            color: #1e3a8a;
+        }
+
+        .callout-title {
+            font-weight: 700;
+            font-size: 1rem;
+            margin-bottom: 0.4rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Comparison Data Table */
+        .table-wrapper {
+            width: 100%;
+            max-width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            display: block;
+            margin: 1.5rem 0;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        table {
+            width: 100%;
+            min-width: 540px;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+            text-align: left;
+            background: #ffffff;
+        }
+
+        th {
+            background: #f8fafc;
+            color: #1e293b;
+            font-weight: 700;
+            padding: 0.85rem 1rem;
+            border-bottom: 2px solid var(--border);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        td {
+            padding: 0.9rem 1rem;
+            border-bottom: 1px solid var(--border);
+            color: #334155;
+            vertical-align: middle;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover td {
+            background: #f8fafc;
+        }
+
+        .tag {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.2rem 0.5rem;
+            border-radius: 6px;
+        }
+
+        .tag-yes {
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        .tag-no {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+
+        .tag-conditional {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        /* Permission Cards */
+        .permission-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .perm-card {
+            background: #f8fafc;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 1.25rem;
+        }
+
+        .perm-name {
+            font-weight: 700;
+            font-size: 1rem;
+            color: #0f172a;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .perm-code {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            background: #e2e8f0;
+            color: #334155;
+            padding: 0.15rem 0.4rem;
+            border-radius: 4px;
+        }
+
+        .perm-body {
+            font-size: 0.9rem;
+            color: #475569;
+        }
+
+        /* Contact Box */
+        .contact-box {
+            background: #f8fafc;
+            border: 1px solid #cbd5e1;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.25rem;
+            margin-top: 1rem;
+        }
+
+        .contact-item {
+            font-size: 0.9rem;
+        }
+
+        .contact-item .label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: var(--text-light);
+            letter-spacing: 0.05em;
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-item .value {
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        /* Footer */
+        .site-footer {
+            background: #ffffff;
+            border-top: 1px solid var(--border);
+            padding: 3rem 1.5rem;
+            margin-top: auto;
+        }
+
+        .footer-inner {
+            max-width: 1240px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1.5rem;
+            font-size: 0.875rem;
+            color: var(--text-light);
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .layout-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .sidebar {
+                display: none;
+            }
+
+            .content-card {
+                padding: 2rem 1.5rem;
+            }
+
+            .page-title {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            html, body {
+                overflow-x: hidden;
+            }
+            .navbar {
+                padding: 0.65rem 0.875rem;
+            }
+            .navbar-inner {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0.65rem;
+            }
+            .brand-group {
+                justify-content: space-between;
+                width: 100%;
+            }
+            .nav-links {
+                display: flex;
+                width: 100%;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                gap: 0.45rem;
+                padding-bottom: 0.25rem;
+                scrollbar-width: none;
+            }
+            .nav-links::-webkit-scrollbar {
+                display: none;
+            }
+            .nav-link, .nav-cta {
+                white-space: nowrap;
+                flex-shrink: 0;
+                font-size: 0.825rem;
+                padding: 0.35rem 0.65rem;
+            }
+            .page-header {
+                padding: 1.75rem 1rem 1.5rem;
+            }
+            .page-title {
+                font-size: 1.65rem;
+                line-height: 1.25;
+            }
+            .meta-strip {
+                gap: 0.65rem 1.25rem;
+                font-size: 0.825rem;
+                margin-top: 0.75rem;
+                padding-top: 0.75rem;
+            }
+            .layout-container {
+                padding: 0 0.75rem;
+                margin: 1.25rem auto 3rem;
+            }
+            .content-card {
+                padding: 1.5rem 1rem;
+                border-radius: 14px;
+            }
+            .prose-section {
+                margin-bottom: 2rem;
+                padding-bottom: 1.75rem;
+            }
+            .section-header {
+                gap: 0.5rem;
+            }
+            .section-header h2 {
+                font-size: 1.25rem;
+            }
+            .section-num {
+                width: 28px;
+                height: 28px;
+                font-size: 0.75rem;
+                border-radius: 6px;
+            }
+            .callout {
+                padding: 1rem 1.15rem;
+                font-size: 0.9rem;
+            }
+            .permission-grid {
+                grid-template-columns: 1fr;
+                gap: 0.875rem;
+            }
+            .perm-card {
+                padding: 1rem;
+            }
+            .perm-name {
+                flex-wrap: wrap;
+                gap: 0.4rem;
+                font-size: 0.95rem;
+            }
+            .contact-box {
+                padding: 1.25rem 1rem;
+            }
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 0.75rem;
+            }
+            .site-footer {
+                padding: 2rem 1rem;
+            }
+            .footer-inner {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 1rem;
+            }
+            .footer-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 0.75rem 1.25rem;
+            }
+        }
+
+        @media print {
+            .navbar, .sidebar, .site-footer {
+                display: none;
+            }
+            .layout-container {
+                display: block;
+                max-width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            .content-card {
+                border: none;
+                box-shadow: none;
+                padding: 0;
+            }
+            body {
+                background: #ffffff;
+                color: #000000;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <div class="brand-group">
+                <div class="brand-logo">
+                    <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div class="brand-name">Vigil<span>Parent</span></div>
+                <span class="brand-badge">Legal</span>
+            </div>
+
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Download App</a>
+                <a href="beta.html" class="nav-link">Beta Program</a>
+                <a href="terms.html" class="nav-link">Terms & Conditions</a>
+                <a href="privacy.html" class="nav-link active">Privacy Policy</a>
+                <a href="mailto:info.vigilstudio@gmail.com" class="nav-cta">Contact Support</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="header-content">
+            <div class="doc-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                Privacy-First Architecture
+            </div>
+            <h1 class="page-title">VigilParent Privacy Policy</h1>
+            <p style="color: var(--text-muted); font-size: 1.125rem; max-width: 800px;">
+                Learn how VigilParent protects family data using peer-to-peer (P2P) synchronization and local device storage. Detailed child activity logs are never stored on company servers.
+            </p>
+
+            <div class="meta-strip">
+                <div class="meta-item">
+                    <span>Developer:</span>
+                    <strong>Vigil Studio</strong>
+                </div>
+                <div class="meta-item">
+                    <span>Last Updated:</span>
+                    <strong>November 10, 2026</strong>
+                </div>
+                <div class="meta-item">
+                    <span>Contact:</span>
+                    <strong>info.vigilstudio@gmail.com</strong>
+                </div>
+                <div class="meta-item">
+                    <span>Compliance:</span>
+                    <strong>COPPA, GDPR-K, India DPDP Act</strong>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Layout -->
+    <div class="layout-container">
+        
+        <!-- Table of Contents Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-title">Table of Contents</div>
+            <ul class="toc-list">
+                <li class="toc-item"><a href="#section-1">1. Introduction & Philosophy</a></li>
+                <li class="toc-item"><a href="#section-2">2. P2P vs Server Architecture</a></li>
+                <li class="toc-item"><a href="#section-3">3. Data Categories Collected</a></li>
+                <li class="toc-item"><a href="#section-4">4. Android Device Permissions</a></li>
+                <li class="toc-item"><a href="#section-5">5. Third-Party SDKs & Ads</a></li>
+                <li class="toc-item"><a href="#section-6">6. Children's Privacy Compliance</a></li>
+                <li class="toc-item"><a href="#section-7">7. Retention & Deletion Rights</a></li>
+                <li class="toc-item"><a href="#section-8">8. Data Security Safeguards</a></li>
+                <li class="toc-item"><a href="#section-9">9. International Transfers</a></li>
+                <li class="toc-item"><a href="#section-10">10. Policy Modifications</a></li>
+                <li class="toc-item"><a href="#section-11">11. Contact & Grievance Officer</a></li>
+            </ul>
+        </aside>
+
+        <!-- Document Body Card -->
+        <main class="content-card">
+            
+            <!-- Section 1 -->
+            <section class="prose-section">
+                <div class="section-header" id="section-1">
+                    <span class="section-num">01</span>
+                    <h2>Introduction & Privacy Philosophy</h2>
+                </div>
+                <div class="prose">
+                    <p>
+                        This Privacy Policy describes how <strong>Vigil Studio</strong> (“We,” “Us,” or “Our”) collects, uses, synchronizes, and safeguards information in connection with the <strong>VigilParent</strong> controller application (for parents) and the <strong>VigilParent Kid</strong> companion application (for the child’s device).
+                    </p>
+                    <div class="callout callout-success">
+                        <div class="callout-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            Our Core Commitment: Local Storage & Zero Server Logs
+                        </div>
+                        <p>
+                            VigilParent is built on the principle that <strong>a parent’s phone is the primary database</strong>. We do not store, archive, or analyze your child’s browsing history, app screen time, or notification logs on our servers. Detailed activity logs are transferred directly between devices via end-to-end encrypted Peer-to-Peer (P2P) connections.
+                        </p>
+                    </div>
+
+                    <div class="callout callout-warning">
+                        <div class="callout-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            Developer Non-Responsibility for Any Activity
+                        </div>
+                        <p>
+                            Vigil Studio acts strictly as an independent software publisher. <strong>Vigil Studio is not responsible for any activity, monitoring, data capture, device pairing, communications interception, location tracking, domestic conflicts, or unlawful actions conducted through or resulting from the use of the software.</strong> All actions and activities remain under the sole and unilateral legal responsibility of the User.
+                        </p>
+                    </div>
+                    <p>
+                        We do not sell, rent, monetize, or trade children’s personal information or family monitoring records to third-party data brokers or marketing companies under any circumstances.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Section 2 -->
+            <section class="prose-section">
+                <div class="section-header" id="section-2">
+                    <span class="section-num">02</span>
+                    <h2>The Core Architecture: P2P vs. Server Storage</h2>
+                </div>
+                <div class="prose">
+                    <p>
+                        To ensure complete transparency regarding how data flows across devices, review the breakdown below:
+                    </p>
+
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Data Element</th>
+                                    <th>Child Device</th>
+                                    <th>Vigil Studio Server</th>
+                                    <th>Parent Device</th>
+                                    <th>Transfer Protocol</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Parent Registered Email ID</strong></td>
+                                    <td><span class="tag tag-no">No</span></td>
+                                    <td><span class="tag tag-yes">Stored (Account ID)</span></td>
+                                    <td><span class="tag tag-yes">Stored</span></td>
+                                    <td>TLS 1.3 / HTTPS</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Child Name / Nickname</strong></td>
+                                    <td><span class="tag tag-yes">Stored</span></td>
+                                    <td><span class="tag tag-yes">Stored (Profile Label)</span></td>
+                                    <td><span class="tag tag-yes">Stored</span></td>
+                                    <td>TLS 1.3 / HTTPS</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Child Device Model Number</strong></td>
+                                    <td><span class="tag tag-yes">Stored</span></td>
+                                    <td><span class="tag tag-yes">Stored (Device ID)</span></td>
+                                    <td><span class="tag tag-yes">Stored</span></td>
+                                    <td>TLS 1.3 / HTTPS</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Child Device "Last Seen" Status</strong></td>
+                                    <td><span class="tag tag-yes">Stored</span></td>
+                                    <td><span class="tag tag-yes">Stored (Timestamp)</span></td>
+                                    <td><span class="tag tag-yes">Stored</span></td>
+                                    <td>TLS 1.3 / HTTPS</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Pairing Date & Parent Email Link</strong></td>
+                                    <td><span class="tag tag-yes">Stored</span></td>
+                                    <td><span class="tag tag-yes">Stored (Binding record)</span></td>
+                                    <td><span class="tag tag-yes">Stored</span></td>
+                                    <td>TLS 1.3 / HTTPS</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Last Known Location (GPS)</strong></td>
+                                    <td><span class="tag tag-yes">Stored</span></td>
+                                    <td><span class="tag tag-conditional">Stored ONLY IF Auto-Location Enabled</span></td>
+                                    <td><span class="tag tag-yes">Stored</span></td>
+                                    <td>TLS 1.3 / HTTPS</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Detailed Activity Logs (Apps, Web, Notifications)</strong></td>
+                                    <td><span class="tag tag-yes">Offline Local Cache</span></td>
+                                    <td><span class="tag tag-no">NEVER STORED</span></td>
+                                    <td><span class="tag tag-yes">Final Synced Destination</span></td>
+                                    <td><strong>Direct Encrypted P2P</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3 style="font-size: 1.15rem; font-weight: 700; margin: 1.5rem 0 0.75rem;">How Synchronization Works:</h3>
+                    <ul>
+                        <li><strong>When the Child Device is Offline:</strong> The companion app continues logging device usage and websites visited. All logs are securely cached locally within the internal, sandboxed storage of the Child Device.</li>
+                        <li><strong>When Child is Online, but Parent is Offline:</strong> The Child Device continues storing all activity logs locally on the child's device. It updates only its “Last Seen” status on our server (so the parent can confirm the child's device is active). If the parent has enabled “Auto Location” in the parent settings, the single latest location point is uploaded to the server.</li>
+                        <li><strong>When Both Devices Connect (Direct P2P Sync):</strong> Once both devices are simultaneously active, they establish a secure, authenticated, end-to-end encrypted Peer-to-Peer (P2P) data channel. All pending logs cached on the child's device synchronize directly to the parent's phone.</li>
+                        <li><strong>No Cloud Intermediary:</strong> <strong>NO GRANULAR ACTIVITY LOGS ARE EVER RECORDED OR STORED ON VIGIL STUDIO CLOUD SERVERS.</strong></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Section 3 -->
+            <section class="prose-section">
+                <div class="section-header" id="section-3">
+                    <span class="section-num">03</span>
+                    <h2>Detailed Breakdown of Information Processed</h2>
+                </div>
+                <div class="prose">
+                    <h3 style="font-size: 1.1rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">A. Data Retained on Company Servers</h3>
+                    <p>To enable account binding and basic device status monitoring, our cloud servers process and retain only:</p>
+                    <ol>
+                        <li><strong>Registered Parent Email ID:</strong> The email used to authenticate your account and manage subscriptions.</li>
+                        <li><strong>Child Name / Nickname:</strong> The label assigned by the parent to identify the child profile.</li>
+                        <li><strong>Child Device Model Number:</strong> The hardware identification string (e.g., <em>Google Pixel 7</em>) used to display device status.</li>
+                        <li><strong>Child Device Last Seen:</strong> An active timestamp reflecting when the child device was last connected to network services.</li>
+                        <li><strong>Pairing Information:</strong> The date and timestamp when the parent account linked the child device.</li>
+                        <li><strong>Last Location (Conditional):</strong> If the parent enables <strong>Auto Location</strong> in the parent dashboard, the server stores the child's single most recent GPS coordinate (latitude, longitude, accuracy, and timestamp) so the parent can see the last location even when offline. New location pings overwrite the prior coordinate.</li>
+                    </ol>
+
+                    <h3 style="font-size: 1.1rem; font-weight: 700; color: #0f172a; margin: 1.5rem 0 0.5rem;">B. Data Processed Strictly On-Device (Never Stored on Server)</h3>
+                    <ul>
+                        <li><strong>Application Usage Logs:</strong> Names of installed applications, timestamps of launches, and daily screen time duration.</li>
+                        <li><strong>Web Browsing History:</strong> URLs accessed via supported web browsers for parental web filtering.</li>
+                        <li><strong>Notification Summaries:</strong> System and messaging notification metadata inspected on-device to deliver parental safety alerts.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Section 4 -->
+            <section class="prose-section">
+                <div class="section-header" id="section-4">
+                    <span class="section-num">04</span>
+                    <h2>Android Device Permissions & Legitimate Use</h2>
+                </div>
+                <div class="prose">
+                    <p>
+                        To deliver transparent parental controls in compliance with Google Play Developer Policies, the VigilParent Kid companion app requests the following core permissions:
+                    </p>
+
+                    <div class="permission-grid">
+                        <div class="perm-card">
+                            <div class="perm-name">
+                                <span>Accessibility Service</span>
+                                <span class="perm-code">BIND_ACCESSIBILITY_SERVICE</span>
+                            </div>
+                            <div class="perm-body">
+                                <strong>Purpose:</strong> Utilized strictly to detect the active foreground application (enforcing daily screen time limits, blocking unauthorized apps), identify URLs in mobile web browsers (protecting minors from harmful or adult websites), and prevent unauthorized uninstallation of the companion app without parental approval.<br>
+                                <strong>Safety Guarantee:</strong> The Accessibility API is <strong>never</strong> used to log passwords, capture keystrokes in banking applications, or intercept private credentials.
+                            </div>
+                        </div>
+
+                        <div class="perm-card">
+                            <div class="perm-name">
+                                <span>Background & Precise Location</span>
+                                <span class="perm-code">ACCESS_BACKGROUND_LOCATION</span>
+                            </div>
+                            <div class="perm-body">
+                                <strong>Purpose:</strong> Allows the companion app to deliver real-time location updates, notify parents when the child crosses geofence safe zones (e.g., school or home), and update the Last Known Location coordinate.
+                            </div>
+                        </div>
+
+                        <div class="perm-card">
+                            <div class="perm-name">
+                                <span>Usage Statistics Access</span>
+                                <span class="perm-code">PACKAGE_USAGE_STATS</span>
+                            </div>
+                            <div class="perm-body">
+                                <strong>Purpose:</strong> Required to compile accurate daily and weekly screen time reports, category breakdowns, and application usage charts for the parent.
+                            </div>
+                        </div>
+
+                        <div class="perm-card">
+                            <div class="perm-name">
+                                <span>Persistent Foreground Notification</span>
+                                <span class="perm-code">FOREGROUND_SERVICE</span>
+                            </div>
+                            <div class="perm-body">
+                                <strong>Purpose:</strong> In compliance with Google Play Stalkerware Policies, this service maintains a persistent, non-dismissible notification in the child’s Android status bar, ensuring the child is always aware that parental protection software is active.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 5 -->
+            <section class="prose-section">
+                <div class="section-header" id="section-5">
+                    <span class="section-num">05</span>
+                    <h2>Third-Party Services and SDKs</h2>
+                </div>
+                <div class="prose">
+                    <p>
+                        We integrate select third-party software development kits (SDKs) to provide core infrastructure, authentication, and diagnostics:
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Google Firebase:</strong>
+                            Provides secure account authentication, cloud messaging (push notification alerts for geofencing and pairing), and crash diagnostics (Firebase Crashlytics). Data is processed in compliance with <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Google Firebase Privacy Terms</a>.
+                        </li>
+                        <li>
+                            <strong>Google Analytics for Firebase:</strong>
+                            Collects aggregate, non-identifying telemetry (e.g., app crash rates, device OS versions) to assist developers in troubleshooting bugs and optimizing responsiveness.
+                        </li>
+                        <li>
+                            <strong>Advertising Network Partners (e.g., Google AdMob):</strong>
+                            Advertisements are displayed <strong>exclusively inside the Parent Controller application (VigilParent)</strong>.<br>
+                            <em>Google Play Families Policy Compliance:</em> The companion <strong>VigilParent Kid</strong> application contains zero behavioral, personalized, or targeted advertising. No advertising identifiers (AdID) are tracked or collected from the child’s device for advertising networks.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Section 6 -->
+            <section class="prose-section">
+                <div class="section-header" id="section-6">
+                    <span class="section-num">06</span>
+                    <h2>Children’s Privacy Compliance (COPPA, GDPR-K, DPDP Act)</h2>
+                </div>
+                <div class="prose">
+                    <p>
+                        Protecting children's personal data is the cornerstone of VigilParent. We comply with international data protection frameworks:
+                    </p>
+                    <ul>
+                        <li><strong>Verifiable Parental Consent:</strong> The VigilParent Kid app cannot be activated in isolation. It requires a cryptographic binding step (QR scan or pairing code) executed directly from the authenticated Parent Device. This establishes affirmative, verifiable parental consent.</li>
+                        <li><strong>COPPA Compliance (United States):</strong> We do not solicit personal information directly from children under 13 without verifiable parental authorization. Parents maintain full control to review, halt, or delete collected data.</li>
+                        <li><strong>GDPR-K Compliance (European Union & UK):</strong> We adhere to Article 5(1)(c) (Data Minimization) and Article 25 (Data Protection by Design). Detailed monitoring data is kept off servers, and parents hold full GDPR data subject rights.</li>
+                        <li><strong>Digital Personal Data Protection Act, 2023 (DPDP Act, India):</strong> In accordance with Section 9 of the DPDP Act 2023, personal data of minors is processed only upon obtaining verifiable consent of the parent or lawful guardian. We do not engage in behavioral profiling of children for marketing purposes.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Section 7 -->
+            <section class="prose-section">
+                <div class="section-header" id="section-7">
+                    <span class="section-num">07</span>
+                    <h2>Data Retention and Deletion Rights</h2>
+                </div>
+                <div class="prose">
+                    <p>
+                        You have complete control over your data and retain the right to request full erasure at any time:
+                    </p>
+                    <ul>
+                        <li><strong>Server Data Retention:</strong> Account records, child profile labels, and device models are kept while your account is active. The Last Known Location is overwritten continuously whenever new coordinates arrive.</li>
+                        <li><strong>Local Device Erasure:</strong> Uninstalling the VigilParent Kid app instantly wipes the local SQLite activity database from the child’s handset. Parents can also purge historical synced logs directly from the Parent Device settings.</li>
+                        <li><strong>Permanent Account & Server Deletion:</strong> You may delete your account and all associated cloud records at any time. Inside the VigilParent app, go to <strong>Settings &gt; Delete Account</strong>, or send an email to <a href="mailto:info.vigilstudio@gmail.com">info.vigilstudio@gmail.com</a> with the subject line <em>"Data Deletion Request"</em>. All server metadata is permanently purged within <strong>seven (7) business days</strong>.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Section 8 -->
+            <section class="prose-section">
+                <div class="section-header" id="section-8">
+                    <span class="section-num">08</span>
+                    <h2>Data Security Safeguards</h2>
+                </div>
+                <div class="prose">
+                    <p>
+                        We enforce strict technical and organizational safeguards designed to prevent unauthorized access or disclosure:
+                    </p>
+                    <ul>
+                        <li><strong>Encryption in Transit:</strong> All communication between user devices and our cloud servers is encrypted via industry-standard <strong>TLS 1.3 / HTTPS</strong>.</li>
+                        <li><strong>P2P Session Encryption:</strong> Direct peer-to-peer data transfers between the Parent Device and Child Device are protected with end-to-end cryptographic handshakes.</li>
+                        <li><strong>Compartmentalized Infrastructure:</strong> Server databases reside in secured Google Cloud data centers protected by multi-factor authentication and strict access controls.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Section 9 -->
+            <section class="prose-section">
+                <div class="section-header" id="section-9">
+                    <span class="section-num">09</span>
+                    <h2>International Data Transfers</h2>
+                </div>
+                <div class="prose">
+                    <p>
+                        VigilParent operates globally. By registering and utilizing the Services, you acknowledge that your minimal Server-Retained Metadata may be stored or processed in data centers located in India, the United States, or other regions where our cloud providers (such as Google Cloud) operate. All data transfers comply with recognized cross-border security mechanisms.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Section 10 -->
+            <section class="prose-section">
+                <div class="section-header" id="section-10">
+                    <span class="section-num">10</span>
+                    <h2>Modifications to this Privacy Policy</h2>
+                </div>
+                <div class="prose">
+                    <p>
+                        We may update this Privacy Policy periodically to reflect technological updates or evolving legal requirements. Any material changes will be announced via an in-app notice, push notification, or an updated “Last Updated” date at the top of this document. We encourage parents to periodically review this page.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Section 11 -->
+            <section class="prose-section">
+                <div class="section-header" id="section-11">
+                    <span class="section-num">11</span>
+                    <h2>Contact Us & Grievance Officer</h2>
+                </div>
+                <div class="prose">
+                    <p>
+                        If you have questions, feedback, or data privacy requests, or wish to reach our Data Protection and Grievance Officer, please contact:
+                    </p>
+
+                    <div class="contact-box">
+                        <div class="contact-grid">
+                            <div class="contact-item">
+                                <div class="label">Developer Organization</div>
+                                <div class="value">Vigil Studio</div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="label">Privacy & Grievance Contact</div>
+                                <div class="value"><a href="mailto:info.vigilstudio@gmail.com">info.vigilstudio@gmail.com</a></div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="label">Attn / Subject Line</div>
+                                <div class="value">Attention: Data Protection / Grievance Officer</div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="label">Response Timeframe</div>
+                                <div class="value">Within 30 calendar days</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div>
+                &copy; 2026 <strong>Vigil Studio</strong>. All rights reserved. VigilParent and VigilParent Kid are proprietary software.
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Download App</a>
+                <a href="beta.html">Beta Program</a>
+                <a href="terms.html">Terms & Conditions</a>
+                <a href="privacy.html" style="font-weight: 600;">Privacy Policy</a>
+                <a href="mailto:info.vigilstudio@gmail.com">Contact Developer</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
