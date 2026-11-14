@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download VigilChild 3.0 Beta | Early Access Testing</title>
+    <meta name="description" content="Download VigilChild 3.0 Beta APK (54.8 MB). Access experimental features including Call Recording and Live Audio Listening While Calling.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #7c3aed;
+            --primary-hover: #6d28d9;
+            --primary-light: #f5f3ff;
+            --primary-border: #ddd6fe;
+            --stable-blue: #2563eb;
+            --stable-light: #eff6ff;
+            --bg-color: #0f172a;
+            --bg-card: #1e293b;
+            --bg-subtle: #334155;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --text-light: #64748b;
+            --border: #334155;
+            --border-hover: #475569;
+            --warning-bg: #451a03;
+            --warning-border: #b45309;
+            --warning-text: #fef3c7;
+            --warning-bright: #f59e0b;
+            --success: #10b981;
+            --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+            --radius-md: 12px;
+            --radius-lg: 20px;
+        }
+
+        html, body {
+            width: 100%;
+            max-width: 100%;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            word-break: break-word;
+            overflow-wrap: break-word;
+        }
+
+        body {
+            background-color: #0b1120;
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: #a78bfa;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        a:hover {
+            color: #c4b5fd;
+        }
+
+        /* Top Navbar */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            padding: 0.875rem 1.5rem;
+        }
+
+        .navbar-inner {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand-group {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .brand-logo {
+            width: 38px;
+            height: 38px;
+            background: linear-gradient(135deg, #7c3aed, #4c1d95);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            box-shadow: 0 4px 10px rgba(124, 58, 237, 0.4);
+        }
+
+        .brand-logo svg {
+            width: 22px;
+            height: 22px;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .brand-name {
+            font-size: 1.25rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: #ffffff;
+        }
+
+        .brand-name span {
+            color: #a78bfa;
+        }
+
+        .beta-tag {
+            background: rgba(124, 58, 237, 0.3);
+            border: 1px solid #7c3aed;
+            color: #c4b5fd;
+            font-size: 0.75rem;
+            font-weight: 800;
+            padding: 0.15rem 0.5rem;
+            border-radius: 9999px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+        }
+
+        .nav-link {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            padding: 0.4rem 0.75rem;
+            border-radius: 8px;
+            transition: all 0.15s ease;
+        }
+
+        .nav-link:hover {
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .stable-nav-pill {
+            background: rgba(37, 99, 235, 0.15);
+            color: #60a5fa !important;
+            border: 1px solid rgba(59, 130, 246, 0.4);
+            padding: 0.35rem 0.85rem;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            transition: all 0.2s ease;
+        }
+
+        .stable-nav-pill:hover {
+            background: var(--stable-blue);
+            color: #ffffff !important;
+        }
+
+        /* Container Layout */
+        .container {
+            max-width: 880px;
+            margin: 0 auto;
+            padding: 2.5rem 1.5rem 5rem;
+        }
+
+        /* Hero / Download Card */
+        .hero-card {
+            background: var(--bg-card);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border);
+            padding: 3.5rem 2.5rem 3rem;
+            text-align: center;
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #7c3aed, #a855f7, #ec4899);
+        }
+
+        .app-badge-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: rgba(124, 58, 237, 0.2);
+            color: #c4b5fd;
+            border: 1px solid rgba(167, 139, 250, 0.4);
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 0.3rem 0.9rem;
+            border-radius: 9999px;
+            margin-bottom: 1.25rem;
+        }
+
+        .hero-logo-box {
+            width: 88px;
+            height: 88px;
+            background: linear-gradient(135deg, #7c3aed 0%, #4c1d95 100%);
+            color: white;
+            border-radius: 24px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 12px 25px -4px rgba(124, 58, 237, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .hero-logo-box svg {
+            width: 48px;
+            height: 48px;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 2.2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        h1 {
+            font-size: 2.6rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.15rem;
+            max-width: 620px;
+            margin: 0 auto 2rem;
+        }
+
+        /* Mandatory Prerequisite Alert Box */
+        .prerequisite-banner {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.15) 0%, rgba(180, 83, 9, 0.2) 100%);
+            border: 1.5px solid var(--warning-border);
+            border-radius: var(--radius-md);
+            padding: 1.5rem 1.75rem;
+            margin: 0 auto 2rem;
+            text-align: left;
+            position: relative;
+        }
+
+        .prereq-header {
+            display: flex;
+            align-items: center;
+            gap: 0.65rem;
+            color: var(--warning-bright);
+            font-weight: 800;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+
+        .prereq-header svg {
+            width: 22px;
+            height: 22px;
+            stroke-width: 2.5;
+            flex-shrink: 0;
+        }
+
+        .prereq-body {
+            color: #fed7aa;
+            font-size: 0.975rem;
+            line-height: 1.6;
+        }
+
+        .prereq-body strong {
+            color: #ffffff;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        .prereq-action-row {
+            margin-top: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .playstore-btn {
+            background: #ffffff;
+            color: #0f172a !important;
+            padding: 0.5rem 1.1rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.2s ease;
+        }
+
+        .playstore-btn:hover {
+            background: #f1f5f9;
+            transform: translateY(-1px);
+        }
+
+        /* Beta Features Showcase */
+        .beta-features-section {
+            margin-top: 3rem;
+            text-align: left;
+        }
+
+        .section-tag {
+            color: #a78bfa;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: 0.25rem;
+        }
+
+        .section-title {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 1.5rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .feature-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 1.75rem;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.25s ease;
+        }
+
+        .feature-card:hover {
+            border-color: #6d28d9;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -5px rgba(124, 58, 237, 0.2);
+        }
+
+        .feature-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: #7c3aed;
+        }
+
+        .feature-icon-badge {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: rgba(124, 58, 237, 0.25);
+            color: #c4b5fd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.15rem;
+            border: 1px solid rgba(167, 139, 250, 0.3);
+        }
+
+        .feature-icon-badge svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .feature-pill {
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 0.2rem 0.5rem;
+            border-radius: 9999px;
+            background: rgba(16, 185, 129, 0.2);
+            color: #34d399;
+            border: 1px solid rgba(52, 211, 153, 0.3);
+            text-transform: uppercase;
+        }
+
+        .feature-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Agreement Checkbox Box */
+        .agreement-box {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1.5px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 1.25rem 1.5rem;
+            max-width: 640px;
+            margin: 0 auto 1.75rem;
+            text-align: left;
+            transition: all 0.25s ease;
+        }
+
+        .agreement-box:hover {
+            border-color: #64748b;
+        }
+
+        .agreement-box.highlight-required {
+            border-color: #ef4444;
+            background-color: rgba(239, 68, 68, 0.1);
+            animation: shake 0.4s ease;
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            20%, 60% { transform: translateX(-6px); }
+            40%, 80% { transform: translateX(6px); }
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.85rem;
+            cursor: pointer;
+            user-select: none;
+            font-size: 0.925rem;
+            color: #cbd5e1;
+            line-height: 1.5;
+        }
+
+        .custom-checkbox {
+            position: relative;
+            flex-shrink: 0;
+            margin-top: 0.15rem;
+        }
+
+        .custom-checkbox input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            accent-color: var(--primary);
+        }
+
+        .checkbox-text a {
+            color: #c4b5fd;
+            font-weight: 600;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        .checkbox-hint {
+            font-size: 0.775rem;
+            color: #94a3b8;
+            margin-top: 0.35rem;
+            display: block;
+        }
+
+        /* Download Action Buttons */
+        .download-actions {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.85rem;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.65rem;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            padding: 1.15rem 2.75rem;
+            border-radius: 50px;
+            font-size: 1.15rem;
+            font-weight: 700;
+            transition: all 0.25s ease;
+            box-shadow: 0 4px 15px rgba(124, 58, 237, 0.4);
+            border: none;
+            cursor: pointer;
+            width: auto;
+            min-width: 280px;
+        }
+
+        .download-btn svg {
+            width: 22px;
+            height: 22px;
+            stroke-width: 2.4;
+        }
+
+        .download-btn:not(.disabled):hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -3px rgba(124, 58, 237, 0.55);
+            color: white;
+            text-decoration: none;
+        }
+
+        .download-btn.disabled {
+            background-color: #475569;
+            cursor: not-allowed;
+            box-shadow: none;
+            opacity: 0.6;
+        }
+
+        .file-info {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .file-info-badge {
+            background: rgba(124, 58, 237, 0.25);
+            border: 1px solid rgba(167, 139, 250, 0.3);
+            padding: 0.15rem 0.5rem;
+            border-radius: 6px;
+            font-size: 0.775rem;
+            color: #ddd6fe;
+            font-weight: 600;
+        }
+
+        .beta-notice-pill {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            background: rgba(245, 158, 11, 0.12);
+            border: 1px solid rgba(245, 158, 11, 0.35);
+            color: #fde68a;
+            font-size: 0.85rem;
+            padding: 0.65rem 1.15rem;
+            border-radius: 10px;
+            max-width: 580px;
+            margin-top: 0.75rem;
+            line-height: 1.45;
+            text-align: center;
+        }
+
+        .beta-notice-pill svg {
+            flex-shrink: 0;
+            color: #f59e0b;
+        }
+
+        /* Beta Installation Steps */
+        .instructions {
+            background: var(--bg-card);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border);
+            padding: 2.75rem;
+            margin-top: 2.5rem;
+            box-shadow: var(--shadow);
+            text-align: left;
+        }
+
+        .section-header-row {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .section-header-row h2 {
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: #ffffff;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.35rem;
+        }
+
+        .section-header-row p {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.25rem;
+        }
+
+        .step-card {
+            display: flex;
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 1.5rem;
+            align-items: flex-start;
+            gap: 1.25rem;
+            transition: all 0.2s ease;
+        }
+
+        .step-card:hover {
+            border-color: #64748b;
+            background: rgba(15, 23, 42, 0.9);
+        }
+
+        .step-number {
+            background: var(--primary);
+            color: #ffffff;
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 1rem;
+            flex-shrink: 0;
+            box-shadow: 0 3px 6px rgba(124, 58, 237, 0.35);
+        }
+
+        .step-content {
+            flex: 1;
+        }
+
+        .step-content h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 0.35rem;
+            color: #ffffff;
+        }
+
+        .step-content p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.55;
+        }
+
+        .step-tag {
+            display: inline-block;
+            background: rgba(124, 58, 237, 0.2);
+            color: #c4b5fd;
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 0.2rem 0.55rem;
+            border-radius: 6px;
+            margin-top: 0.5rem;
+        }
+
+        /* Developer Contact Box */
+        .contact-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 1.75rem 2rem;
+            margin-top: 2.5rem;
+            text-align: left;
+        }
+
+        .contact-box-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 0.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-box-subtitle {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            margin-bottom: 1.25rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.25rem;
+        }
+
+        .contact-item {
+            font-size: 0.9rem;
+        }
+
+        .contact-item .label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #a78bfa;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-item .value {
+            font-weight: 600;
+            color: #f8fafc;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 4.5rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links a {
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        .footer-links a:hover {
+            color: #c4b5fd;
+        }
+
+        @media (max-width: 768px) {
+            html, body {
+                overflow-x: hidden;
+            }
+            .navbar {
+                padding: 0.65rem 0.875rem;
+            }
+            .navbar-inner {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0.65rem;
+            }
+            .brand-group {
+                justify-content: space-between;
+                width: 100%;
+            }
+            .nav-links {
+                display: flex;
+                width: 100%;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                gap: 0.45rem;
+                padding-bottom: 0.25rem;
+                scrollbar-width: none;
+            }
+            .nav-links::-webkit-scrollbar {
+                display: none;
+            }
+            .nav-link, .stable-nav-pill {
+                white-space: nowrap;
+                flex-shrink: 0;
+                font-size: 0.825rem;
+                padding: 0.35rem 0.65rem;
+            }
+            .container { 
+                padding: 1.25rem 0.875rem 3rem; 
+            }
+            .hero-card { 
+                padding: 2rem 1rem 1.75rem; 
+                border-radius: 16px;
+            }
+            .hero-logo-box {
+                width: 72px;
+                height: 72px;
+                border-radius: 18px;
+                margin-bottom: 1.25rem;
+            }
+            .hero-logo-box svg {
+                width: 38px;
+                height: 38px;
+            }
+            h1 { 
+                font-size: 1.85rem; 
+                line-height: 1.2;
+            }
+            .subtitle { 
+                font-size: 0.95rem; 
+                margin-bottom: 1.25rem;
+            }
+            .prerequisite-banner {
+                padding: 1.15rem 1rem;
+                border-radius: 12px;
+                margin-bottom: 1.5rem;
+            }
+            .prereq-header {
+                font-size: 0.85rem;
+            }
+            .prereq-body {
+                font-size: 0.9rem;
+            }
+            .prereq-action-row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .playstore-btn {
+                width: 100%;
+                justify-content: center;
+                padding: 0.75rem 1rem;
+            }
+            .agreement-box {
+                padding: 0.875rem;
+            }
+            .checkbox-label {
+                gap: 0.65rem;
+                font-size: 0.85rem;
+            }
+            .download-btn {
+                width: 100%;
+                max-width: 100%;
+                min-width: 0;
+                padding: 1rem 1.25rem;
+                font-size: 1.05rem;
+            }
+            .file-info {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 0.4rem;
+                font-size: 0.8rem;
+            }
+            .beta-notice-pill {
+                font-size: 0.8rem;
+                padding: 0.6rem 0.85rem;
+                text-align: left;
+                align-items: flex-start;
+                gap: 0.45rem;
+            }
+            .section-title {
+                font-size: 1.35rem;
+            }
+            .features-grid { 
+                grid-template-columns: 1fr; 
+                gap: 1rem;
+            }
+            .feature-card {
+                padding: 1.25rem 1rem;
+            }
+            .instructions { 
+                padding: 1.5rem 1rem; 
+                border-radius: 16px;
+                margin-top: 2rem;
+            }
+            .section-header-row {
+                margin-bottom: 1.5rem;
+            }
+            .section-header-row h2 {
+                font-size: 1.4rem;
+            }
+            .section-header-row p {
+                font-size: 0.875rem;
+            }
+            .step-card {
+                padding: 1rem 0.875rem;
+                gap: 0.75rem;
+            }
+            .step-number {
+                width: 30px;
+                height: 30px;
+                font-size: 0.875rem;
+                border-radius: 8px;
+            }
+            .step-content h3 {
+                font-size: 1.05rem;
+            }
+            .step-content p {
+                font-size: 0.875rem;
+            }
+            .contact-box {
+                padding: 1.25rem 1rem;
+                margin-top: 2rem;
+            }
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 0.75rem;
+            }
+            footer {
+                margin-top: 3rem;
+                font-size: 0.825rem;
+            }
+            .footer-links {
+                gap: 0.75rem 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <div class="brand-group">
+                <div class="brand-logo">
+                    <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div class="brand-name">Vigil<span>Child</span></div>
+                <span class="beta-tag">Beta Testing</span>
+            </div>
+
+            <div class="nav-links">
+                <a href="./" class="stable-nav-pill">
+                    ← Stable Version
+                </a>
+                <a href="beta" class="nav-link" style="color: #a78bfa;">Beta App</a>
+                <a href="terms" class="nav-link">Terms</a>
+                <a href="privacy" class="nav-link">Privacy</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+        <!-- Hero Section & Download Area -->
+        <header class="hero-card">
+            <div class="app-badge-pill">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                Experimental Preview v3.0 Beta
+            </div>
+
+            <div class="hero-logo-box">
+                <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+
+            <h1>VigilChild 3.0 Beta</h1>
+            <p class="subtitle">Experience next-generation parental supervision tools with real-time call safety and audio monitoring.</p>
+
+            <!-- MANDATORY PREREQUISITE WARNING BOX -->
+            <div class="prerequisite-banner">
+                <div class="prereq-header">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    CRITICAL REQUIREMENT BEFORE DOWNLOADING
+                </div>
+                <div class="prereq-body">
+                    <strong>Important Note:</strong> Only download the VigilChild Beta version if you have already joined the VigilParent Beta version through the Google Play Store.
+                    <div style="margin-top: 0.4rem;">
+                        Features such as Call Recording and Live Audio sync require the updated controller interface available only in the VigilParent Parent Beta app.
+                    </div>
+                </div>
+                <div class="prereq-action-row">
+                    <a href="https://play.google.com/store/apps/details?id=com.service.vigilparent" target="_blank" class="playstore-btn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a2.03 2.03 0 0 1-.61-.955V2.77c0-.36.223-.706.609-.956zm11.233 11.236l2.167 2.167-11.45 6.45 9.283-8.617zm2.977-1.954c.642.368 1.05.98 1.05 1.664s-.408 1.296-1.05 1.664l-1.93 1.103-2.385-2.385 2.385-2.385 1.93 1.339zm-13.427-8.62l11.45 6.45-2.167 2.167-9.283-8.617z"/></svg>
+                        Join VigilParent Beta on Google Play
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mandatory Agreement Checkbox -->
+            <div class="agreement-box" id="agreementBox">
+                <label class="checkbox-label" for="termsCheckbox">
+                    <div class="custom-checkbox">
+                        <input type="checkbox" id="termsCheckbox" onchange="handleCheckboxChange()">
+                    </div>
+                    <div class="checkbox-text">
+                        I certify that I am the <strong>legal parent or guardian</strong> with custody over this device, I have enrolled in the <strong>VigilParent Parent Beta</strong> on Google Play, and I agree to the <a href="terms" target="_blank">Terms and Conditions</a> and <a href="privacy" target="_blank">Privacy Policy</a>.
+                        <span class="checkbox-hint">Agreement is strictly required to unlock the Beta download link.</span>
+                    </div>
+                </label>
+            </div>
+
+            <!-- Download Button -->
+            <div class="download-actions">
+                <a id="downloadBtn" 
+                   href="https://github.com/mizanansari781-bot/vigildownload.github.io/releases/download/VigilVhild3.0/VigilChild3.0.apk" 
+                   class="download-btn disabled" 
+                   onclick="handleDownloadClick(event)">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    <span>Download VigilChild 3.0 Beta APK</span>
+                </a>
+
+                <div class="file-info">
+                    <span class="file-info-badge">v3.0 Beta Early Access</span>
+                    <span>54.8 MB</span>
+                    <span>•</span>
+                    <span>Requires Android 7.0+</span>
+                </div>
+
+                <!-- Prominent Reminder Note -->
+                <div class="beta-notice-pill">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                    <span><strong>Please Note:</strong> Only download the VigilChild Beta version if you have already joined the VigilParent Beta version through the Google Play Store.</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Exclusive Beta Features Showcase -->
+        <section class="beta-features-section">
+            <div class="section-tag">New Experimental Capabilities</div>
+            <h2 class="section-title">What's Inside VigilChild Beta?</h2>
+
+            <div class="features-grid">
+                <!-- Feature 1: Call Recording -->
+                <div class="feature-card">
+                    <div class="feature-icon-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/><circle cx="18" cy="6" r="3"/></svg>
+                    </div>
+                    <h3>
+                        <span>1. Call Recording</span>
+                        <span class="feature-pill">Beta Feature</span>
+                    </h3>
+                    <p>
+                        Automatically records both incoming and outgoing phone calls placed on the child's device. Audio recordings are encrypted and synchronized exclusively to your Parent controller phone via secure P2P without permanent server retention.
+                    </p>
+                </div>
+
+                <!-- Feature 2: Live Audio Listening -->
+                <div class="feature-card">
+                    <div class="feature-icon-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+                    </div>
+                    <h3>
+                        <span>2. Live Audio Listening While Calling</span>
+                        <span class="feature-pill">Live Sync</span>
+                    </h3>
+                    <p>
+                        Allows parents to establish a low-latency live audio streaming channel during an active phone call to listen to real-time ambient surroundings and protect children from predatory contacts, bullying, or dangerous situations.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Beta Installation Instructions -->
+        <main>
+            <section class="instructions">
+                <div class="section-header-row">
+                    <h2>How to Set Up the Beta Environment</h2>
+                    <p>Ensure both your Parent controller and Child companion app are in sync.</p>
+                </div>
+
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Join VigilParent Beta on Google Play</h3>
+                            <p>On your parent phone, visit the <strong>VigilParent</strong> listing on Google Play Store. Scroll down to <em>"Join the beta program"</em> and tap <strong>Join</strong>. Once updated, you will have the Beta dashboard ready.</p>
+                            <span class="step-tag">Step Required First</span>
+                        </div>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Download & Install VigilChild 3.0 Beta APK</h3>
+                            <p>On the child’s device, check the consent box above, download the <strong>v3.0 Beta APK (54.8 MB)</strong>, and enable <em>"Allow from this source"</em> if prompted by Android.</p>
+                        </div>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Grant Audio & Call Permissions</h3>
+                            <p>Open <strong>VigilChild Beta</strong> on the child device. Grant requested Microphone and Call Log permissions so the app can detect call events and capture audio for parental safety.</p>
+                        </div>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Pair Devices via QR Code</h3>
+                            <p>Open your updated Parent app, generate a new connection QR code, and scan it with the Child Beta app to complete the encrypted P2P channel handshake.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Developer Contact Information -->
+            <div class="contact-box">
+                <div class="contact-box-title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    Developer Contact Information
+                </div>
+                <div class="contact-box-subtitle">Official developer information and support channels for VigilParent & VigilChild.</div>
+
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <div class="label">Developer Organization</div>
+                        <div class="value">Vigil Studio</div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="label">Support & Inquiries</div>
+                        <div class="value"><a href="mailto:info.vigilstudio@gmail.com">info.vigilstudio@gmail.com</a></div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="label">Legal & Privacy Contact</div>
+                        <div class="value"><a href="mailto:info.vigilstudio@gmail.com">info.vigilstudio@gmail.com</a></div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="label">Physical Address</div>
+                        <div class="value">Available upon verified formal email request</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-links">
+                <a href="./">← Stable Child Download</a>
+                <a href="beta">Beta Program</a>
+                <a href="terms">Terms & Conditions</a>
+                <a href="privacy">Privacy Policy</a>
+                <a href="mailto:info.vigilstudio@gmail.com">Developer Contact</a>
+            </div>
+            <p>&copy; 2026 <strong>Vigil Studio</strong>. VigilParent and VigilChild are proprietary parental management systems. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+    <!-- Interactive Script for Terms Enforcement -->
+    <script>
+        function handleCheckboxChange() {
+            const checkbox = document.getElementById('termsCheckbox');
+            const downloadBtn = document.getElementById('downloadBtn');
+            const agreementBox = document.getElementById('agreementBox');
+
+            if (checkbox.checked) {
+                downloadBtn.classList.remove('disabled');
+                agreementBox.classList.remove('highlight-required');
+            } else {
+                downloadBtn.classList.add('disabled');
+            }
+        }
+
+        function handleDownloadClick(event) {
+            const checkbox = document.getElementById('termsCheckbox');
+            const agreementBox = document.getElementById('agreementBox');
+
+            if (!checkbox.checked) {
+                event.preventDefault();
+                agreementBox.classList.add('highlight-required');
+                
+                // Shake effect reset
+                setTimeout(() => {
+                    agreementBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }, 100);
+
+                setTimeout(() => {
+                    agreementBox.classList.remove('highlight-required');
+                }, 1200);
+            }
+        }
+    </script>
+
+</body>
+</html>
